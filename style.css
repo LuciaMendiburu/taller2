@@ -1,0 +1,492 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*
+font-family: 'Chivo', sans-serif;
+font-family: 'Playfair Display', serif;
+*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+=====================================Clases generales=========================================
+*/
+
+.button{
+    background-color: #B1C211;
+    font-family: 'Chivo', sans-serif;
+    border-radius: 11px;
+    border: none;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 2.5rem 6rem;
+    }
+    
+    .double-line-container__title{
+    
+        border: 2px solid #D8615A;
+        border-style: double;
+        font-size: 4rem;
+        padding: 4rem 2rem;
+        width: 60%;
+        margin-bottom: 5vh;
+        margin-top: 5vh;
+        text-align: center;
+    
+    }
+    
+    
+    .double-line-container__content{
+         /*Permite que le pueda dar alto y ancho al contenedor*/
+         display: inline-block;
+         height: 690px;
+         width: 100%;
+     
+         /*En este caso el flex permite centrar el contenido del contenedor*/
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+     
+     
+         /*se le indica la imagen de fondo y el contain hace que se adapte sin cortarse*/
+         background: url("../data/double-line-container.png") no-repeat center ;
+         background-size: 85%;
+
+        
+     
+    }
+    
+    .double-line-container__content__row{
+    
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 5rem;
+    
+    }
+    
+    
+    
+
+/*
+=====================================Etiquetas=========================================
+*/
+
+html  {
+    font-size: 5px;
+    font-family: 'Chivo', sans-serif;
+
+}
+
+/*---------------------------------------HEADER-------------------------------------------*/
+
+
+
+header  div:first-child {
+background-color: #BE8253;
+font-size: 3rem;
+padding-top:  1.5rem;
+padding-bottom: 1.5rem;
+text-align: center;
+color: #ffffff;
+font-weight: normal;
+}
+
+header  div:last-child {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 2rem 3rem;
+box-shadow: 0 3px 5px 0px rgba(0,0,0,0.6);
+}
+
+header div h2{
+
+    font-family: 'Playfair Display', serif;
+    font-size: 6rem;
+    font-weight: 800;
+    }
+
+    header {
+   
+        background-color: #ffffff;
+        position: sticky; /* Set the navbar to fixed position */
+        top: 0; /* Position the navbar at the top of the page */
+        width: 100%; /* Full width */
+        
+        }
+
+/*------------------------------------BANNER-------------------------------------------*/
+
+.banner{
+    /*Permite que le pueda dar alto y ancho al contenedor*/
+    display: inline-block;
+    height: calc(100vh - 100px);
+    width: 100%;
+
+    /*En este caso el flex permite centrar el contenido del contenedor*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    /*se le indica la imagen de fondo y el contain hace que se adapte sin cortarse*/
+    background: url("../data/BackgroundFormMobile-1.png") no-repeat center ;
+    background-size: cover;
+    
+}
+
+.banner div{
+
+
+    
+    /* -- borde -- */
+   width: 80%;
+   height: 85%;
+   display: inline-block;
+   border: #B1C211 solid 5px;
+
+    /* -- contenido -- */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    
+}
+
+.banner div h3{
+    font-size: 5rem;
+    font-weight: 400;
+    
+}
+
+.banner div h4{
+    font-size: 5rem;
+    font-family:  'Playfair Display', serif; 
+    font-weight: 800;
+    margin-bottom: 5vh;
+    
+}
+
+.banner div p{
+    font-size: 3rem;
+    
+    
+}
+
+.banner div b{
+    font-size: 3rem;
+    font-weight: 800;
+    
+}
+
+
+.banner div button{
+    
+    padding-left: 15rem;
+    padding-right: 15rem;
+    margin-top: 14vh;
+    
+}
+
+/*------------------------------------INTRO-------------------------------------------*/
+
+.intro {
+    display: flex;
+    flex-direction: column;
+
+      /*Permite que le pueda dar alto y ancho al contenedor*/
+      display: inline-block;
+      height: 690px;
+      width: 100%;
+  
+      /*En este caso el flex permite centrar el contenido del contenedor*/
+      display: flex;
+      align-items: center;
+      justify-content: top;
+  
+  
+      /*se le indica la imagen de fondo y el contain hace que se adapte sin cortarse*/
+      background: url("../data/BolsaPapelConSombra.png") no-repeat center ;
+      background-size: contain;
+
+      /* -- arreglo temporal para superponer la bolsa con el form-- */
+
+      margin-top: -40px;
+      
+}
+
+
+.intro div{
+   width:75%;
+   color: #ffffff;
+  
+  
+}
+
+.intro  div h1{
+
+font-size: 6rem;
+font-family: 'Playfair Display', serif;  
+font-weight: 800;
+margin-top: 15vh;
+margin-bottom:1vh;
+
+
+}
+
+.intro  div h2{
+
+    font-size: 3rem;
+    font-weight: 300;
+    
+    
+    }
+
+.intro  div p{
+
+    font-size: 3rem;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+
+}
+
+.intro__mobile__container{
+
+  display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.intro div button{
+
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: 2px solid #ffffff;
+    cursor:pointer;
+    overflow: hidden;
+    border-radius: 11px; 
+    width: 85rem;
+    margin-right: -12rem;
+    margin-left: 2rem;
+    color: #ffffff;
+}
+
+.intro div img{
+    border: 2px solid #ffffff;
+    border-radius: 11px;  
+    padding: 2rem;
+
+}
+
+/*------------------------------------NUTRICIONAL-------------------------------------------*/
+
+
+
+.nutricional{
+  
+    margin-top: 15vh;
+    display: flex;
+     flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  
+      /* --  Por qué el text align center también me centra la imagen?
+      
+      text-align: center;
+      -- */
+    
+    
+  
+  }
+  
+    
+  .nutricional div:last-child img{
+  
+      /*ajusta el ancho de la imagen al contenedor*/
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      
+  } 
+  
+
+
+/*-------------------------INTRO P Y P-------------------------------------------*/
+
+
+.intro-pyp{
+display: flex;
+flex-direction: column;
+margin-top: 20rem;
+align-items: center;
+justify-content:space-between;
+}
+
+
+.intro-pyp .double-line-container {
+    margin-top: 15rem;
+    width: 65%;
+   }
+
+
+.intro-pyp p{
+    font-size: 3rem;
+    line-height: 150%;
+    text-align: center;
+    
+   }
+
+
+
+   /*-------------------------P Y P-------------------------------------------*/
+
+.pyp img{
+    margin-left: 3rem;
+}
+.pyp p{
+    font-size: 3rem;
+}
+
+.pyp h3{
+    font-size: 6rem;
+    margin-left: 4rem;
+}
+
+
+.double-line-container__content div {
+
+    margin-left: -4rem;
+} 
+
+.double-line-container__content div:nth-child(2) p{
+   margin-left: 5rem;
+}
+
+.double-line-container__content p{
+
+    margin-left: -8rem;
+}
+
+.double-line-container__content div:last-child {
+   
+    margin-top: 3rem;
+   }
+
+.double-line-container__content div:last-child p{
+ font-size: 2rem;
+ margin-bottom: 3rem;
+ margin-left: 4rem;
+ margin-top: 3rem;
+ 
+}
+
+ /*-------------------------INSPIRACIÓN-------------------------------------------*/
+
+.insp{
+
+/*Permite que le pueda dar alto y ancho al contenedor*/
+display: inline-block;
+height: 1266px;
+width: 100%;
+
+/*En este caso el flex permite centrar el contenido del contenedor*/
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: top;
+
+
+
+/*se le indica la imagen de fondo y el contain hace que se adapte sin cortarse*/
+background: url("../data/motivacionBackgroundMobile.png") no-repeat center ;
+
+}
+
+.insp div{
+    font-size: 5rem;
+    text-align: right;
+    margin-top: 30rem;
+}
+
+.insp div img{
+    margin-right: 10rem;
+
+}
+
+.insp div h4{
+    font-family: 'Playfair Display', serif;
+    font-weight: bolder;
+
+}
+
+.insp .container{
+
+ max-height: 400px;
+display: flex;
+margin-top: -20rem;
+margin-left: 200rem;
+
+
+ 
+
+}
+
+
+.insp .container .item{
+    z-index: 2;
+    position: relative;
+    overflow: hidden;
+   
+   }
