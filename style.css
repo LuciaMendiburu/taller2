@@ -59,7 +59,7 @@ table {
 =====================================Clases generales=========================================
 */
 
-.data-Mobile{
+.data-mobile{
     display: inline-block;
 }
 
@@ -77,6 +77,7 @@ table {
     color: #ffffff;
     padding: 2.5rem 6rem;
     font-size: 20px;
+    cursor:pointer;
     }
 
     .button__form{
@@ -84,8 +85,9 @@ table {
         padding-left: 12rem;
         padding-right: 12rem;
         margin-top: 8vh;
-        margin-bottom: 8vh;
-        /*margin-top: 14vh;*/
+       /*margin-bottom: 8vh;
+        margin-top: 14vh;*/
+        cursor:pointer;
     }
     
     .double-line-container__title{
@@ -241,7 +243,7 @@ header div h2{
 
 .banner div p{
     font-size: 3rem;
-    width: 90%;
+    width: 100%;
     
     
 }
@@ -250,6 +252,22 @@ header div h2{
     font-size: 3rem;
     font-weight: 800;
     
+}
+
+.banner .greenContainer .banner__pimienta-flex {
+  margin: 0px;
+  padding: 0px;
+
+}
+
+.banner .greenContainer .banner__pimienta-flex div{
+    /*padding provisional hasta que entienda por qué se le agregar un anchode la ada al contenedor de pimienta*/
+    padding-left: 3rem;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 20px;
 }
 
 
@@ -338,6 +356,7 @@ margin-bottom:1vh;
     margin-right: -12rem;
     margin-left: 2rem;
     color: #ffffff;
+    cursor:pointer;
 }
 
 .intro div img{
@@ -676,6 +695,7 @@ background: url("../data/BackgroundFormMobile-2.png") no-repeat center ;
 
         margin-top: 8vh;
         margin-bottom: 8vh;
+        
 
         
     }
@@ -743,9 +763,9 @@ footer div div{
 @media (min-width: 1024px) {
 
 /*
-=====================================Clases generales=========================================
+=====================================Clases generales DESKTOP =========================================
 */
-.data-Mobile{
+.data-mobile{
     display: none;
 }
 
@@ -763,6 +783,7 @@ footer div div{
     color: #ffffff;
     padding: 2rem 5rem;
     font-size: 3rem;
+    cursor:pointer;
     }
 
     .button__form{
@@ -774,12 +795,13 @@ footer div div{
         padding-bottom: 4rem;
        /* margin-bottom: 8vh;
         margin-top: 14vh;*/
+        cursor:pointer;
     }
 
     .greenContainer{
         /* -- borde -- */
   width: 80%;
-  height: 75%;
+  height: 70%;
   display: inline-block;
   border: #B1C211 solid 5px;
 
@@ -800,7 +822,7 @@ footer div div{
 
 
 /*
-=====================================Etiquetas=========================================
+=============================Etiquetas DESKTOP=================================
 */
 
 html  {
@@ -809,7 +831,7 @@ html  {
 
 }
 
-/*---------------------------------------HEADER-------------------------------------------*/
+/*--------------HEADER DESKTOP------------------------------------*/
 
 
 
@@ -850,9 +872,9 @@ header div h2{
         }
 
 
-}
 
-/*------------------------------------BANNER-------------------------------------------*/
+
+/*--------------BANNER DESKTOP----------------------*/
 
 .banner{
     /*Permite que le pueda dar alto y ancho al contenedor*/
@@ -923,4 +945,115 @@ padding-bottom: 5rem;
    width: 100%;
       
 }
+/*--------INTRO DESKTOP-------------------------------*/
 
+.intro {
+    display: flex;
+    flex-direction: column;
+
+      /*Permite que le pueda dar alto y ancho al contenedor*/
+      display: inline-block;
+      height: 705px;
+      width: 100%;
+  
+      /*En este caso el flex permite centrar el contenido del contenedor*/
+      display: flex;
+      align-items: center;
+        justify-content: center;
+  
+  
+      /*se le indica la imagen de fondo y el contain hace que se adapte sin cortarse*/
+      background: url("../data/BolsaPapelRasgadoConSombra.png") no-repeat center ;
+      background-size: contain;
+
+      /* -- arreglo temporal para superponer la bolsa con el form-- */
+
+      margin-top: -188px;
+      padding-top: 12rem;
+      
+}
+
+
+.intro .data-desktop{
+    width: 80%;
+    height: auto;
+    display: flex;
+   padding-bottom: 13vh;
+}
+
+
+
+.intro div{
+   width:75%;
+   color: #ffffff;
+   
+  
+}
+
+.intro  .data-desktop div:first-child{
+    line-height: 30px;
+}
+
+.intro  .data-desktop div:last-child   h1{
+
+font-size: 6rem;
+font-family: 'Playfair Display', serif;  
+font-weight: bolder;
+margin-top: 6vh;
+margin-bottom:1vh;
+
+
+}
+
+.intro  .data-desktop div:last-child{
+height: 80%;
+display: flex;
+flex-direction: column;
+text-align: center;
+justify-content: space-between;
+
+
+}
+
+.intro  .data-desktop div:first-child h2{
+
+    font-size: 3rem;
+    font-weight: bold;
+    
+    
+    }
+
+.intro  .data-desktop div:first-child p{
+
+    font-size: 3rem;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    font-weight: 200;
+
+
+}
+
+
+
+.intro .data-desktop div:last-child button{
+     
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: 2px solid #ffffff;
+    cursor:pointer;
+    overflow: hidden;
+    border-radius: 11px; 
+    width: 40%;
+    height: 20%;
+    display: inline-block;
+    color: #ffffff;
+
+
+    /* -- arreglo temporal hasta entender por qué no puedo centrarlo en el eje X al botón-- */
+   margin-left: 30rem;
+}
+
+
+
+
+}
