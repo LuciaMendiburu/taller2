@@ -80,7 +80,7 @@ table {
     
     .double-line-container__title{
     
-        border: 2px solid #D8615A;
+        border: 8px solid #D8615A;
         border-style: double;
         font-size: 4rem;
         padding: 4rem 2rem;
@@ -625,7 +625,7 @@ background: url("../data/BackgroundFormMobile-2.png") no-repeat center ;
    
    flex-direction: column;
    
-      width: 90%;
+      width: 80%;
    margin-top: 20vh;
   
 
@@ -633,7 +633,7 @@ background: url("../data/BackgroundFormMobile-2.png") no-repeat center ;
 
  .form .greenContainer h2{
      margin-top:3vh ;
-    font-size: 30px;
+    font-size: 5.5rem;
     margin-bottom: 3vh;
     }
       
@@ -727,3 +727,12 @@ footer div div{
        justify-content: space-between;
 }
 
+
+/*--------------------------------desktop------------------------*/
+
+@media (min-width: 1024px){
+
+
+
+
+}
