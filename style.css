@@ -54,9 +54,19 @@ table {
 	border-spacing: 0;
 }
 
+@media (max-width: 1023px) {
 /*
 =====================================Clases generales=========================================
 */
+
+.data-Mobile{
+    display: inline-block;
+}
+
+.data-desktop{
+    display: none;
+}
+
 
 .button{
     background-color: #B1C211;
@@ -75,7 +85,7 @@ table {
         padding-right: 12rem;
         margin-top: 8vh;
         margin-bottom: 8vh;
-       /* margin-top: 14vh;*/
+        /*margin-top: 14vh;*/
     }
     
     .double-line-container__title{
@@ -726,13 +736,191 @@ footer div div{
       display: flex;
        justify-content: space-between;
 }
-
+}
 
 /*--------------------------------desktop------------------------*/
 
-@media (min-width: 1024px){
+@media (min-width: 1024px) {
+
+/*
+=====================================Clases generales=========================================
+*/
+.data-Mobile{
+    display: none;
+}
+
+.data-desktop{
+    display: inline-block;
+}
 
 
+.button{
+    background-color: #B1C211;
+    font-family: 'Chivo', sans-serif;
+    border-radius: 11px;
+    border: none;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 2rem 5rem;
+    font-size: 3rem;
+    }
+
+    .button__form{
+
+        padding-left: 8rem;
+        padding-right: 8rem;
+        margin-top: 8vh;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+       /* margin-bottom: 8vh;
+        margin-top: 14vh;*/
+    }
+
+    .greenContainer{
+        /* -- borde -- */
+  width: 80%;
+  height: 75%;
+  display: inline-block;
+  border: #B1C211 solid 5px;
+
+   /* -- contenido -- */
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+
+   }
+
+   .banner__pimienta-flex{
+       display: flex;
+       flex-direction: row;
+         align-items: center;
+   }
+
+
+/*
+=====================================Etiquetas=========================================
+*/
+
+html  {
+    font-size: 5px;
+    font-family: 'Chivo', sans-serif;
+
+}
+
+/*---------------------------------------HEADER-------------------------------------------*/
+
+
+
+header  div:first-child {
+background-color: #BE8253;
+font-size: 2rem;
+padding-top:  1.5rem;
+padding-bottom: 1.5rem;
+text-align: center;
+color: #ffffff;
+font-weight: normal;
+}
+
+header  div:last-child {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 3rem 4rem;
+box-shadow: 0 3px 5px 0px rgba(0,0,0,0.6);
+}
+
+header div h2{
+
+    font-family: 'Playfair Display', serif;
+    font-size: 6rem;
+    font-weight: 800;
+    }
+
+    header {
+   
+        background-color: #ffffff;
+        position: sticky; /* Set the navbar to fixed position */
+        z-index: 1; /* Set z-index to 1 so it does not hide content */
+        top: 0; /* Position the navbar at the top of the page */
+        width: 100%; /* Full width */
+        
+        }
 
 
 }
+
+/*------------------------------------BANNER-------------------------------------------*/
+
+.banner{
+    /*Permite que le pueda dar alto y ancho al contenedor*/
+    display: inline-block;
+    height: calc(100vh - 100px);
+    width: 100%;
+
+    /*En este caso el flex permite centrar el contenido del contenedor*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    /*se le indica la imagen de fondo y el contain hace que se adapte sin cortarse*/
+    background: url("../data/BackgroundFormdesktop-1.png") no-repeat center ;
+    background-size: cover;
+    
+}
+
+
+.banner div h3{
+    font-size: 5rem;
+    font-weight: 400;
+    
+}
+
+.banner div h4{
+    font-size: 5rem;
+    font-family:  'Playfair Display', serif; 
+    font-weight: 800;
+    margin-bottom: 5vh;
+    
+}
+
+.banner div p{
+    font-size: 3rem;
+    width: 90%;
+    
+    
+}
+
+.banner div b{
+    font-size: 3rem;
+    font-weight: 800;
+    
+}
+
+.banner .greenContainer{
+padding-top: 5rem;
+padding-bottom: 5rem;
+}
+
+
+
+.banner .greenContainer .banner__pimienta-flex  img{
+    width: 30%;
+    height: auto;
+    
+}
+.banner .greenContainer .banner__pimienta-flex div{
+    text-align: left;
+    line-height: 20px;
+    margin-right: 5rem;
+    
+}
+
+.banner .greenContainer .banner__pimienta-flex div p{
+   width: 100%;
+      
+}
+
