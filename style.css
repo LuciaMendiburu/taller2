@@ -388,7 +388,7 @@ margin-bottom:1vh;
   }
   
     
-  .nutricional div:last-child img{
+  .nutricional img:last-child {
   
       /*ajusta el ancho de la imagen al contenedor*/
       width: 100%;
@@ -820,6 +820,51 @@ footer div div{
          align-items: center;
    }
 
+   .double-line-container__title{
+    
+    border: 8px solid #D8615A;
+    border-style: double;
+    font-size: 4rem;
+    padding: 6rem 2rem;
+    width: 25%;
+    text-align: center;
+
+   
+
+}
+
+ 
+.double-line-container__content{
+    /*Permite que le pueda dar alto y ancho al contenedor*/
+    display: inline-block;
+    height: 690px;
+    width: 100%;
+
+    /*En este caso el flex permite centrar el contenido del contenedor*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+    /*se le indica la imagen de fondo y el contain hace que se adapte sin cortarse*/
+    background: url("../data/double-line-container.png") no-repeat center ;
+    background-size: 85%;
+
+   
+
+}
+
+.double-line-container__content__row{
+
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   margin-bottom: 5rem;
+
+}
+
+
 
 /*
 =============================Etiquetas DESKTOP=================================
@@ -1053,7 +1098,138 @@ justify-content: space-between;
    margin-left: 30rem;
 }
 
+/*--------------------------NUTRICIONAL DESKTOP-------------------------------------------*/
 
+ 
+    
+  .nutricional .data-desktop{
+  
+      /*ajusta el ancho de la imagen al contenedor*/
+      width:100%;
+      height: auto;
+      object-fit: contain;
+      
+  } 
+
+  .double-line-container__title{
+        /* -- arreglo temporal por superponer el div a la imagen de abajo */
+        margin-bottom: -60rem;
+         margin-left: 40rem;
+        
+  }
+  
+  
+/*-------------------------INTRO P Y P DESKTOP -------------------------------------------*/
+
+
+.intro-pyp{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 8rem;
+
+}
+
+
+.intro-pyp div:last-child{
+  display: flex;
+    flex-direction: column;
+    font-size: 4rem;
+    text-align: center;
+    }
+
+
+
+
+
+    .intro-pyp div:last-child div:first-child{
+
+        /*tuve que ponerlelos estilos llamando a la etiqueta contenedora y no poniendole la clase double-line-container__title porque invertía el orden de los divs como un column reverse*/
+        border: 8px solid #E57C54;
+        font-size: 4rem;
+        border-style: double;
+        padding: 6rem 8rem;
+
+    }
+
+        .intro-pyp div:last-child p{
+
+                margin-top: 4vh;
+                font-size: 3rem;
+                line-height: 150%;
+                text-align: center;
+                font-weight: 400;
+                
+              
+
+
+        }
+        
+
+ /*-------------------------P Y P-------------------------------------------*/
+
+ .pyp img{
+    margin-left: 3rem;
+    margin-top: 3rem;
+}
+.pyp p{
+    font-size: 3rem;
+}
+
+.pyp h3{
+    font-size: 6rem;
+    padding-bottom: 4rem;
+   }
+
+   .pyp .double-line-container__content .double-line-container__content__row h3{
+    
+    
+    margin-left: 4rem;
+    margin-top: 4vh;
+   }
+
+   .pyp .double-line-container__content  h3{
+    
+    
+    margin-left: 4rem;
+    margin-top: 4vh;
+    margin-left: 32rem;
+   }
+
+
+
+   
+
+
+.double-line-container__content div {
+
+    margin-left: -4rem;
+} 
+
+.double-line-container__content div:nth-child(2) p{
+   margin-left: 5rem;
+}
+
+.double-line-container__content p{
+
+    margin-left: -8rem;
+}
+
+.double-line-container__content div:last-child {
+   
+    margin-top: 3rem;
+   }
+
+.double-line-container__content div:last-child p{
+ font-size: 2rem;
+ margin-bottom: 3rem;
+ margin-left: 4rem;
+ margin-top: 3rem;
+ 
+}
+    
+  
 
 
 }
