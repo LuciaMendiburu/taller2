@@ -1513,7 +1513,9 @@ justify-content: space-evenly;
 
 }
 
-
+footer section{
+    margin-left: 10rem;
+}
 
 
 footer h4{
@@ -1534,10 +1536,10 @@ footer div h5{
 }
 
 footer div{
-    
-       margin-top: 6rem;
+    margin-top: 5vh;
+    margin-left: 40rem;
+}
 
-  }
   
 footer div div{
   width: 15%;
@@ -1548,8 +1550,8 @@ footer div div{
 }
 
 footer div div img{
-   width: 20%;
-   height: auto;
+    width: 25%;
+    height: auto;
   }
 
 
