@@ -1485,6 +1485,73 @@ margin-top: -60vh;
        
    }
 
+/*-------------------------FOOTER-------------------------------------------*/
+
+footer{
+
+    /*Permite que le pueda dar alto y ancho al contenedor*/
+display: inline-block;
+height: 294px;
+width: 100%;
+
+/*En este caso el flex permite centrar el contenido del contenedor*/
+display: flex;
+flex-direction: column;
+align-items: top;
+justify-content: center;
+
+
+
+
+/*se le indica la imagen de fondo y el contain hace que se adapte sin cortarse*/
+background: url("../data/footerDesktop.png") no-repeat center ;
+
+/* -- arreglo temporal para superponer la bolsa con el form-- */
+margin-top: -50vh;
+
+justify-content: space-evenly;
+
+}
+
+
+
+
+footer h4{
+  
+  font-family: 'Playfair Display', serif;
+  font-size: 5rem;
+  font-weight: bolder;
+  margin-left: 10rem;
+
+}
+
+footer div h5{
+
+  font-family: 'Chivo', sans-serif;
+  font-size: 3rem;
+  margin-left: 10rem;
+  margin-left: calc(50% - 7.5rem);
+}
+
+footer div{
+    
+       margin-top: 6rem;
+
+  }
+  
+footer div div{
+  width: 15%;
+     margin-left: calc(50% - 7.5rem);
+     margin-top: 2rem;
+    display: flex;
+     justify-content: space-between;
+}
+
+footer div div img{
+   width: 20%;
+   height: auto;
+  }
+
 
 
 }
