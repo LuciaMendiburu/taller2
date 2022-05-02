@@ -1403,7 +1403,88 @@ justify-content: space-between;
         font-size: 1rem;
     }
     
+     /*-------FORM DESKTOP------------------------------------*/
+
+ .form{
      
+
+    /*Permite que le pueda dar alto y ancho al contenedor*/
+display: inline-block;
+height: 1429px;
+width: 100%;
+
+/*En este caso el flex permite centrar el contenido del contenedor*/
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: top;
+
+
+
+/*se le indica la imagen de fondo y el contain hace que se adapte sin cortarse*/
+background: url("../data/BackgroundFormDesktop-2.png") no-repeat center ;
+
+/* -- arreglo temporal para superponer la bolsa con el form-- */
+margin-top: -60vh;
+
+
+
+}
+
+
+.form .greenContainer {
+   
+  display: flex;
+  font-size: 15px;
+  flex-direction: column;
+  height: 32%;
+  width: 60%;
+  margin-top: 70vh;
+ 
+
+}
+
+.form .greenContainer h2{
+    margin-top:3vh ;
+   font-size: 5.5rem;
+   margin-bottom: 3vh;
+   }
+     
+
+ .form .greenContainer  p {
+   margin-bottom: 3vh;
+   }
+
+   input, textarea{
+       border: 0;
+       outline: none;
+       text-align: left;
+       padding-left: 2rem;
+      
+
+   }
+
+   .field{
+      text-align: center;
+       display: inline-block;
+       border: #B1C211 solid 3px;
+       width: 48%;
+       height: 4.5vh;
+       margin-bottom: 2vh;
+   }
+
+   
+
+   
+   .form .greenContainer  .button{
+
+       margin-top: 8vh;
+      /* margin-bottom: 8vh;*/
+       
+
+       
+   }
+
 
 
 }
