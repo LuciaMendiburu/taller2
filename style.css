@@ -118,7 +118,7 @@ table {
      
      
          /*se le indica la imagen de fondo y el contain hace que se adapte sin cortarse*/
-         background: url("../data/double-line-container.png") no-repeat center ;
+         background: url(" data/double-line-container.png") no-repeat center ;
          background-size: 85%;
 
         
@@ -221,7 +221,7 @@ header div h2{
 
 
     /*se le indica la imagen de fondo y el contain hace que se adapte sin cortarse*/
-    background: url("../data/BackgroundFormMobile-1.png") no-repeat center ;
+    background: url("  data/BackgroundFormMobile-1.png") no-repeat center ;
     background-size: cover;
     
 }
@@ -291,7 +291,7 @@ header div h2{
   
   
       /*se le indica la imagen de fondo y el contain hace que se adapte sin cortarse*/
-      background: url("../data/BolsaPapelConSombra.png") no-repeat center ;
+      background: url("  data/BolsaPapelConSombra.png") no-repeat center ;
       background-size: cover;
 
       /* -- arreglo temporal para superponer la bolsa con el form-- */
@@ -506,7 +506,7 @@ justify-content: top;*/
 
 
 /*se le indica la imagen de fondo y el contain hace que se adapte sin cortarse*/
-background: url("../data/motivacionBackgroundMobile.png") no-repeat center ;
+background: url("  data/motivacionBackgroundMobile.png") no-repeat center ;
 background-size: cover;
 
 }
@@ -630,7 +630,7 @@ justify-content: top;
 
 
 /*se le indica la imagen de fondo y el contain hace que se adapte sin cortarse*/
-background: url("../data/BackgroundFormMobile-2.png") no-repeat center ;
+background: url("  data/BackgroundFormMobile-2.png") no-repeat center ;
 
  /* -- arreglo temporal para superponer la bolsa con el form-- */
  margin-top: -30vh;
@@ -721,7 +721,7 @@ justify-content: center;
 
 
 /*se le indica la imagen de fondo y el contain hace que se adapte sin cortarse*/
-background: url("../data/footerMobile.png") no-repeat center ;
+background: url("  data/footerMobile.png") no-repeat center ;
 
  /* -- arreglo temporal para superponer la bolsa con el form-- */
  margin-top: -5vh;
@@ -857,7 +857,7 @@ footer section div div{
 
 
     /*se le indica la imagen de fondo y el contain hace que se adapte sin cortarse*/
-    background: url("../data/double-line-container-desktop.png") no-repeat center ;
+    background: url("  data/double-line-container-desktop.png") no-repeat center ;
     background-size: 90%;
    
 
@@ -944,7 +944,7 @@ header div h2{
 
 
     /*se le indica la imagen de fondo y el contain hace que se adapte sin cortarse*/
-    background: url("../data/BackgroundFormdesktop-1.png") no-repeat center ;
+    background: url("  data/BackgroundFormdesktop-1.png") no-repeat center ;
     background-size: cover;
     
 }
@@ -1018,7 +1018,7 @@ padding-bottom: 5rem;
   
   
       /*se le indica la imagen de fondo y el contain hace que se adapte sin cortarse*/
-      background: url("../data/BolsaPapelRasgadoConSombra.png") no-repeat center ;
+      background: url("  data/BolsaPapelRasgadoConSombra.png") no-repeat center ;
       background-size: contain;
 
       /* -- arreglo temporal para superponer la bolsa con el form-- */
@@ -1270,7 +1270,7 @@ justify-content: space-between;
     
     
     /*se le indica la imagen de fondo y el contain hace que se adapte sin cortarse*/
-    background: url("../data/motivacionBackgroundDesktop.png") no-repeat center ;
+    background: url("  data/motivacionBackgroundDesktop.png") no-repeat center ;
     background-size: cover;
     
     }
@@ -1433,7 +1433,7 @@ justify-content: top;
 
 
 /*se le indica la imagen de fondo y el contain hace que se adapte sin cortarse*/
-background: url("../data/BackgroundFormDesktop-2.png") no-repeat center ;
+background: url("  data/BackgroundFormDesktop-2.png") no-repeat center ;
 
 /* -- arreglo temporal para superponer la bolsa con el form-- */
 margin-top: -60vh;
@@ -1515,7 +1515,7 @@ justify-content: center;
 
 
 /*se le indica la imagen de fondo y el contain hace que se adapte sin cortarse*/
-background: url("../data/footerDesktop.png") no-repeat center ;
+background: url("  data/footerDesktop.png") no-repeat center ;
 
 /* -- arreglo temporal para superponer la bolsa con el form-- */
 margin-top: -50vh;
