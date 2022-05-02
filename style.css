@@ -837,8 +837,9 @@ footer div div{
 .double-line-container__content{
     /*Permite que le pueda dar alto y ancho al contenedor*/
     display: inline-block;
-    height: 690px;
-    width: 100%;
+   width: 358px;
+   height: 535px;
+    
 
     /*En este caso el flex permite centrar el contenido del contenedor*/
     display: flex;
@@ -848,8 +849,9 @@ footer div div{
 
 
     /*se le indica la imagen de fondo y el contain hace que se adapte sin cortarse*/
-    background: url("../data/double-line-container.png") no-repeat center ;
-    background-size: 85%;
+    background: url("../data/double-line-container-desktop.png") no-repeat center ;
+    background-size: 90%;
+   
 
    
 
@@ -1167,8 +1169,18 @@ justify-content: space-between;
         }
         
 
- /*-------------------------P Y P-------------------------------------------*/
+ /*----------P Y P DESKTOP-----------------------------------*/
 
+ 
+ .pyp{
+     margin-top: 30vh;
+     width: 100%;
+     height: auto;
+     display: flex;
+     justify-content: space-evenly;
+ }
+ 
+ 
  .pyp img{
     margin-left: 3rem;
     margin-top: 3rem;
@@ -1179,7 +1191,7 @@ justify-content: space-between;
 
 .pyp h3{
     font-size: 6rem;
-    padding-bottom: 4rem;
+   
    }
 
    .pyp .double-line-container__content .double-line-container__content__row h3{
@@ -1229,7 +1241,169 @@ justify-content: space-between;
  
 }
     
-  
+   /*-------------------------INSPIRACIÓN-------------------------------------------*/
+
+.insp{
+
+    /*Permite que le pueda dar alto y ancho al contenedor*/
+    display: inline-block;
+    height: 1266px;
+    width: 100%;
+    
+    /*En este caso el flex permite centrar el contenido del contenedor*/
+    display: flex;
+    flex-direction: column;
+    /*align-items: center;
+    justify-content: top;*/
+    
+    
+    
+    /*se le indica la imagen de fondo y el contain hace que se adapte sin cortarse*/
+    background: url("../data/motivacionBackgroundDesktop.png") no-repeat center ;
+    background-size: cover;
+    
+    }
+    
+    .insp div:first-child{
+        font-size: 5rem;
+        text-align: right;
+        margin-top: 30rem;
+        margin-right: 8rem;
+        margin-bottom: 5rem;
+    }
+
+    
+    .insp .data-desktop{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        margin-top: 14vh;
+    }
+
+    .insp .data-desktop div:last-child{
+        font-size: 4.5rem;
+        display: flex;
+        margin-top: 8vh;
+        margin-right: 110rem;
+        justify-self: center;
+       
+    }
+
+    .insp .data-desktop img{
+        width: 40%;
+        height: auto;
+      }
+
+    .insp .data-desktop div:last-child h3{
+      padding-top: 0.23rem;
+      font-weight: 600;
+    }
+
+
+    .insp .data-desktop div:last-child h4{
+       
+        display: flex;
+       
+        margin-left:2rem;
+
+       
+    }
+
+    
+    .insp div img{
+        margin-right: 10rem;
+    
+    }
+    
+    .insp div h4{
+        font-family: 'Playfair Display', serif;
+        font-weight: bolder;
+    
+    }
+    
+    .insp .container {
+        display: flex;
+        padding: 0 2rem;
+        overflow-x: auto;
+        margin-left: 5rem;
+        scroll-snap-type: both mandatory;
+        margin-top: 4vh;
+    }
+    
+    .insp .container .card {
+        position: relative;
+        height: 450px;
+        margin-top: 1rem;
+        margin-right: 1rem;
+        
+        
+        background-size: cover;
+        border-radius: 8px;
+        
+        scroll-snap-align: start;
+        scroll-margin: 2rem;
+        transition: all .4s ease-in-out;
+        
+        
+        
+    }
+    
+    .insp  .container .card :hover {
+        box-shadow: 0 .4rem 2rem rgba(0, 0, 0, .2), inset 0 0 1px white;
+    }
+    .insp .container .card a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    .insp .container .card .thumb {
+        width: 80vw;
+        max-width: 480px;
+        height: 120px;
+        overflow: hidden;
+        border-radius: 8px 8px 0 0;
+       
+    }
+    
+    .insp .container .card .thumb img {
+        width: 100%;
+    }
+    
+    .insp .container .card .copy {
+        position: absolute;
+        bottom: 0;
+        top: auto;
+        left: 0;
+        right: 0;
+        padding: 1rem;
+        background-color: rgba(255, 255, 255, .9);
+        border-radius: 0 0 8px 8px;
+       
+        
+       
+    }
+    
+    .insp .container .card .copy .label {
+        font-size: .8rem;
+        letter-spacing: .1rem;
+        color: lightgray;
+        background-color: black;
+        display: inline;
+        padding: 2px 8px;
+        border-radius: 4px;
+    }
+    
+    .insp .container .card .copy .title {
+        font-family: Times New Roman, serif;
+        font-weight: lighter;
+        font-size: 1.2rem;
+    }
+    
+    .insp .container .card .copy  .text {
+        font-size: 1rem;
+    }
+    
+     
 
 
 }
