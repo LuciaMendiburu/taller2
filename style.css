@@ -944,7 +944,7 @@ header div h2{
 
 
     /*se le indica la imagen de fondo y el contain hace que se adapte sin cortarse*/
-    background: url("  data/BackgroundFormdesktop-1.png") no-repeat center ;
+    background: url("  data/BackgroundFormDesktop-1.png") no-repeat center ;
     background-size: cover;
     
 }
