@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 /*
 font-family: 'Chivo', sans-serif;
@@ -10,136 +10,234 @@ font-family: 'Playfair Display', serif;
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*========SCROLL BAR========*/
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #E4EAC7; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #A0A859; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #B1C211; 
+  }
+
+b {
+  font-weight: 700;
+}
+
+.title-line {
+  margin-bottom: 1rem;
 }
 
 @media (max-width: 1023px) {
-/*
+  /*
 =====================================Clases generales=========================================
 */
 
-.data-mobile{
+  .data-mobile {
     display: inline-block;
-}
+  }
 
-.data-desktop{
+  .data-desktop {
     display: none;
-}
+  }
 
-
-.button{
-    background-color: #B1C211;
-    font-family: 'Chivo', sans-serif;
+  .button {
+    background-color: #b1c211;
+    font-family: "Chivo", sans-serif;
     border-radius: 11px;
     border: none;
     font-weight: bold;
     color: #ffffff;
     padding: 2.5rem 6rem;
     font-size: 20px;
-    cursor:pointer;
-    }
+    cursor: pointer;
+  }
 
-    .button__form{
+  .button__form {
+    padding-left: 12rem;
+    padding-right: 12rem;
+    margin-top: 8vh;
 
-        padding-left: 12rem;
-        padding-right: 12rem;
-        margin-top: 8vh;
-       /*margin-bottom: 8vh;
-        margin-top: 14vh;*/
-        cursor:pointer;
-    }
-    
-    .double-line-container__title{
-    
-        border: 8px solid #D8615A;
-        border-style: double;
-        font-size: 4rem;
-        padding: 4rem 2rem;
-        width: 100%;
-        margin-bottom: 5vh;
-        margin-top: 5vh;
-        text-align: center;
-    
-    }
-    
-    
-    .double-line-container__content{
-         /*Permite que le pueda dar alto y ancho al contenedor*/
-         display: inline-block;
-         height: 690px;
-         width: 100%;
-     
-         /*En este caso el flex permite centrar el contenido del contenedor*/
-         display: flex;
-         flex-direction: column;
-         align-items: center;
-         justify-content: center;
-     
-     
-         /*se le indica la imagen de fondo y el contain hace que se adapte sin cortarse*/
-         background: url(" data/double-line-container.png") no-repeat center ;
-         background-size: 85%;
+    cursor: pointer;
+  }
 
-        
-     
-    }
-    
-    .double-line-container__content__row{
-    
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        margin-bottom: 5rem;
-    
-    }
+  .double-line-container__title {
+    border: 8px solid #d8615a;
+    border-style: double;
+    font-size: 4rem;
+    padding: 4rem 2rem;
+    width: 70%;
+    margin-bottom: 5vh;
+    margin-top: 5vh;
+    text-align: center;
+  }
 
-    .greenContainer{
-         /* -- borde -- */
-   width: 80%;
-   height: 75%;
-   display: inline-block;
-   border: #B1C211 solid 5px;
+  .double-line-container__content {
+    /*Permite que le pueda dar alto y ancho al contenedor*/
+    display: inline-block;
+    height: 690px;
+    width: 100%;
+
+    /*En este caso el flex permite centrar el contenido del contenedor*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    /*se le indica la imagen de fondo y el contain hace que se adapte sin cortarse*/
+    background: url(" data/double-line-container.png") no-repeat center;
+    background-size: 85%;
+  }
+
+  .double-line-container__content__row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 5rem;
+  }
+
+  .greenContainer {
+    /* -- borde -- */
+    width: 80%;
+    height: 75%;
+    display: inline-block;
+    border: #b1c211 solid 5px;
 
     /* -- contenido -- */
     display: flex;
@@ -147,68 +245,55 @@ table {
     align-items: center;
     justify-content: center;
     text-align: center;
+  }
 
-    }
-
-    
-
-   
-    
-    
-
-/*
+  /*
 =====================================Etiquetas=========================================
 */
 
-html  {
+  html {
     font-size: 5px;
-    font-family: 'Chivo', sans-serif;
+    font-family: "Chivo", sans-serif;
+  }
 
-}
+  /*---------------------------------------HEADER-------------------------------------------*/
 
-/*---------------------------------------HEADER-------------------------------------------*/
+  header div:first-child {
+    background-color: #be8253;
+    font-size: 3rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    text-align: center;
+    color: #ffffff;
+    font-weight: normal;
+  }
 
+  header div:last-child {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 3rem;
+    box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.6);
+  }
 
-
-header  div:first-child {
-background-color: #BE8253;
-font-size: 3rem;
-padding-top:  1.5rem;
-padding-bottom: 1.5rem;
-text-align: center;
-color: #ffffff;
-font-weight: normal;
-}
-
-header  div:last-child {
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-align-items: center;
-padding: 2rem 3rem;
-box-shadow: 0 3px 5px 0px rgba(0,0,0,0.6);
-}
-
-header div h2{
-
-    font-family: 'Playfair Display', serif;
+  header div h2 {
+    font-family: "Playfair Display", serif;
     font-size: 6rem;
     font-weight: 800;
-    }
+  }
 
-    header {
-   
-        background-color: #ffffff;
-        position: sticky; /* Set the navbar to fixed position */
-        z-index: 1; /* Set z-index to 1 so it does not hide content */
-        top: 0; /* Position the navbar at the top of the page */
-        width: 100%; /* Full width */
-        
-        }
+  header {
+    background-color: #ffffff;
+    position: sticky; /* Set the navbar to fixed position */
+    z-index: 1; /* Set z-index to 1 so it does not hide content */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+  }
 
-/*------------------------------------BANNER-------------------------------------------*/
+  /*------------------------------------BANNER-------------------------------------------*/
 
-.banner{
+  .banner {
     /*Permite que le pueda dar alto y ancho al contenedor*/
     display: inline-block;
     height: calc(100vh - 100px);
@@ -219,48 +304,39 @@ header div h2{
     align-items: center;
     justify-content: center;
 
-
     /*se le indica la imagen de fondo y el contain hace que se adapte sin cortarse*/
-    background: url("  data/BackgroundFormMobile-1.png") no-repeat center ;
+    background: url("  data/BackgroundFormMobile-1.png") no-repeat center;
     background-size: cover;
-    
-}
+  }
 
-
-.banner div h3{
+  .banner div h3 {
     font-size: 5rem;
     font-weight: 400;
-    
-}
+  }
 
-.banner div h4{
+  .banner div h4 {
     font-size: 5rem;
-    font-family:  'Playfair Display', serif; 
+    font-family: "Playfair Display", serif;
     font-weight: 800;
     margin-bottom: 5vh;
-    
-}
+  }
 
-.banner div p{
+  .banner div p {
     font-size: 3rem;
     width: 100%;
-    
-    
-}
+  }
 
-.banner div b{
+  .banner div b {
     font-size: 3rem;
     font-weight: 800;
-    
-}
+  }
 
-.banner .greenContainer .banner__pimienta-flex {
-  margin: 0px;
-  padding: 0px;
+  .banner .greenContainer .banner__pimienta-flex {
+    margin: 0px;
+    padding: 0px;
+  }
 
-}
-
-.banner .greenContainer .banner__pimienta-flex div{
+  .banner .greenContainer .banner__pimienta-flex div {
     /*padding provisional hasta que entienda por qué se le agregar un anchode la ada al contenedor de pimienta*/
     padding-left: 3rem;
     width: 90%;
@@ -268,586 +344,570 @@ header div h2{
     flex-direction: column;
     justify-content: center;
     line-height: 20px;
-}
+  }
 
+  /*------------------------------------INTRO-------------------------------------------*/
 
-
-
-/*------------------------------------INTRO-------------------------------------------*/
-
-.intro {
+  .intro {
     display: flex;
     flex-direction: column;
 
-      /*Permite que le pueda dar alto y ancho al contenedor*/
-      display: inline-block;
-      height: 705px;
-      width: 100%;
-  
-      /*En este caso el flex permite centrar el contenido del contenedor*/
-      display: flex;
-      align-items: center;
-      justify-content: top;
-  
-  
-      /*se le indica la imagen de fondo y el contain hace que se adapte sin cortarse*/
-      background: url("  data/BolsaPapelConSombra.png") no-repeat center ;
-      background-size: cover;
+    /*Permite que le pueda dar alto y ancho al contenedor*/
+    display: inline-block;
+    height: 705px;
+    width: 100%;
 
-      /* -- arreglo temporal para superponer la bolsa con el form-- */
+    /*En este caso el flex permite centrar el contenido del contenedor*/
+    display: flex;
+    align-items: center;
+    justify-content: top;
 
-      margin-top: -40px;
-      padding-top: 12rem;
-      
-}
+    /*se le indica la imagen de fondo y el contain hace que se adapte sin cortarse*/
+    background: url("  data/BolsaPapelConSombra.png") no-repeat center;
+    background-size: cover;
 
+    /* -- arreglo temporal para superponer la bolsa con el form-- */
 
-.intro div{
-   width:75%;
-   color: #ffffff;
-  
-  
-}
+    margin-top: -40px;
+    padding-top: 12rem;
+  }
 
-.intro  div h1{
+  .intro div {
+    width: 75%;
+    color: #ffffff;
+  }
 
-font-size: 6rem;
-font-family: 'Playfair Display', serif;  
-font-weight: 800;
-margin-top: 6vh;
-margin-bottom:1vh;
+  .intro div h1 {
+    font-size: 6rem;
+    font-family: "Playfair Display", serif;
+    font-weight: 800;
+    margin-top: 6vh;
+    margin-bottom: 1vh;
+  }
 
-
-}
-
-.intro  div h2{
-
+  .intro div h2 {
     font-size: 3rem;
     font-weight: 300;
-    
-    
-    }
+  }
 
-.intro  div p{
-
+  .intro div p {
     font-size: 3rem;
     margin-top: 5vh;
     margin-bottom: 5vh;
+  }
 
-}
-
-.intro__mobile__container{
-
-  display: flex;
+  .intro__mobile__container {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
+  }
 
-}
-
-.intro div button{
-
+  .intro div button {
     background-color: Transparent;
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     border: 2px solid #ffffff;
-    cursor:pointer;
+    cursor: pointer;
     overflow: hidden;
-    border-radius: 11px; 
+    border-radius: 11px;
     width: 85rem;
     margin-right: -12rem;
     margin-left: 2rem;
     color: #ffffff;
-    cursor:pointer;
-}
+    cursor: pointer;
+  }
 
-.intro div img{
+  .intro div img {
     border: 2px solid #ffffff;
-    border-radius: 11px;  
+    border-radius: 11px;
     padding: 2rem;
+  }
 
-}
+  /*------------------------------------NUTRICIONAL-------------------------------------------*/
 
-/*------------------------------------NUTRICIONAL-------------------------------------------*/
-
-
-
-.nutricional{
-  
+  .nutricional {
     margin-top: 5vh;
     display: flex;
-     flex-direction: column;
-      justify-content: center;
-      align-items: center;
-  
-      /* --  Por qué el text align center también me centra la imagen?
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* --  Por qué el text align center también me centra la imagen?
       
       text-align: center;
       -- */
-    
-    
-  
   }
-  
-    
+
   .nutricional img:last-child {
-  
-      /*ajusta el ancho de la imagen al contenedor*/
-      width: 100%;
-      height: auto;
-      object-fit: contain;
-      
-  } 
-  
+    /*ajusta el ancho de la imagen al contenedor*/
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
 
+  /*-------------------------INTRO P Y P-------------------------------------------*/
 
-/*-------------------------INTRO P Y P-------------------------------------------*/
+  .intro-pyp {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20rem;
+    align-items: center;
+    justify-content: space-between;
+  }
 
+  .intro-pyp div .data-mobile {
+    width: 100%;
+  }
 
-.intro-pyp{
-display: flex;
-flex-direction: column;
-margin-top: 20rem;
-align-items: center;
-justify-content:space-between;
-}
+  .intro-pyp div:last-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-
-.intro-pyp .double-line-container {
+  .intro-pyp .double-line-container {
     margin-top: 15rem;
     width: 65%;
-   }
+  }
 
-
-.intro-pyp p{
+  .intro-pyp p {
     font-size: 3rem;
     line-height: 150%;
     text-align: center;
-    
-   }
+  }
 
+  /*-------------------------P Y P-------------------------------------------*/
 
-
-   /*-------------------------P Y P-------------------------------------------*/
-
-.pyp img{
+  .pyp img {
     margin-left: 3rem;
     margin-top: 3rem;
-}
-.pyp p{
+  }
+  .pyp p {
     font-size: 3rem;
-}
+  }
 
-.pyp h3{
+  .pyp h3 {
     font-size: 6rem;
     padding-bottom: 4rem;
-   }
+  }
 
-   .pyp .double-line-container__content .double-line-container__content__row h3{
-    
-    
+  .pyp .double-line-container__content .double-line-container__content__row h3 {
     margin-left: 4rem;
     margin-top: 4vh;
-   }
+  }
 
-   .pyp .double-line-container__content  h3{
-    
-    
+  .pyp .double-line-container__content h3 {
     margin-left: 4rem;
     margin-top: 4vh;
     margin-left: 32rem;
-   }
+  }
 
-
-
-   
-
-
-.double-line-container__content div {
-
+  .double-line-container__content div {
     margin-left: -4rem;
-} 
+  }
 
-.double-line-container__content div:nth-child(2) p{
-   margin-left: 5rem;
-}
+  .double-line-container__content div:nth-child(2) p {
+    margin-left: 5rem;
+  }
 
-.double-line-container__content p{
-
+  .double-line-container__content p {
     margin-left: -8rem;
-}
+  }
 
-.double-line-container__content div:last-child {
-   
+  .double-line-container__content div:last-child {
     margin-top: 3rem;
-   }
+  }
 
-.double-line-container__content div:last-child p{
- font-size: 2rem;
- margin-bottom: 3rem;
- margin-left: 4rem;
- margin-top: 3rem;
- 
-}
+  .double-line-container__content div:last-child p {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    margin-left: 4rem;
+    margin-top: 3rem;
+  }
 
- /*-------------------------INSPIRACIÓN-------------------------------------------*/
+  /*-------------------------INSPIRACIÓN-------------------------------------------*/
 
-.insp{
+  .insp {
+    /*Permite que le pueda dar alto y ancho al contenedor*/
+    display: inline-block;
+    height: 1266px;
+    width: 100%;
 
-/*Permite que le pueda dar alto y ancho al contenedor*/
-display: inline-block;
-height: 1266px;
-width: 100%;
-
-/*En este caso el flex permite centrar el contenido del contenedor*/
-display: flex;
-flex-direction: column;
-/*align-items: center;
+    /*En este caso el flex permite centrar el contenido del contenedor*/
+    display: flex;
+    flex-direction: column;
+    /*align-items: center;
 justify-content: top;*/
 
+    /*se le indica la imagen de fondo y el contain hace que se adapte sin cortarse*/
+    background: url("  data/motivacionBackgroundMobile.png") no-repeat center;
+    background-size: cover;
+  }
 
-
-/*se le indica la imagen de fondo y el contain hace que se adapte sin cortarse*/
-background: url("  data/motivacionBackgroundMobile.png") no-repeat center ;
-background-size: cover;
-
-}
-
-.insp div:first-child{
+  .insp div:first-child {
     font-size: 5rem;
     text-align: right;
     margin-top: 30rem;
     margin-right: 8rem;
     margin-bottom: 5rem;
-}
+  }
 
-.insp div img{
+  .insp div img {
     margin-right: 10rem;
+  }
 
-}
-
-.insp div h4{
-    font-family: 'Playfair Display', serif;
+  .insp div h4 {
+    font-family: "Playfair Display", serif;
     font-weight: bolder;
+  }
 
-}
+  .insp .container {
+    display: flex;
+    padding: 0 2rem;
+    overflow-x: auto;
+    margin-left: 5rem;
+    scroll-snap-type: both mandatory;
+  }
 
-.insp .container {
-	display: flex;
-	padding: 0 2rem;
-	overflow-x: auto;
-	margin-left: 5rem;
-	scroll-snap-type: both mandatory;
-}
-
-.insp .container .card {
-	position: relative;
-	height: 450px;
-	margin-top: 1rem;
+  .insp .container .card {
+    position: relative;
+    height: 450px;
+    margin-top: 1rem;
     margin-right: 1rem;
-    
-	
-	background-size: cover;
-	border-radius: 8px;
-	
-	scroll-snap-align: start;
-	scroll-margin: 2rem;
-	transition: all .4s ease-in-out;
-	
-	
-	
-}
 
-.insp  .container .card :hover {
-    box-shadow: 0 .4rem 2rem rgba(0, 0, 0, .2), inset 0 0 1px white;
-}
-.insp .container .card a {
+    background-size: cover;
+    border-radius: 8px;
+
+    scroll-snap-align: start;
+    scroll-margin: 2rem;
+    transition: all 0.4s ease-in-out;
+  }
+
+  .insp .container .card :hover {
+    box-shadow: 0 0.4rem 2rem rgba(0, 0, 0, 0.2), inset 0 0 1px white;
+  }
+  .insp .container .card a {
     text-decoration: none;
     color: black;
-}
+  }
 
-.insp .container .card .thumb {
+  .insp .container .card .thumb {
     width: 80vw;
     max-width: 480px;
     height: 120px;
     overflow: hidden;
     border-radius: 8px 8px 0 0;
-   
-}
+  }
 
-.insp .container .card .thumb img {
+  .insp .container .card .thumb img {
     width: 100%;
-}
+  }
 
-.insp .container .card .copy {
+  .insp .container .card .copy {
     position: absolute;
     bottom: 0;
     top: auto;
     left: 0;
     right: 0;
     padding: 1rem;
-    background-color: rgba(255, 255, 255, .9);
+    background-color: rgba(255, 255, 255, 0.9);
     border-radius: 0 0 8px 8px;
-   
-    
-   
-}
+  }
 
-.insp .container .card .copy .label {
-    font-size: .8rem;
-    letter-spacing: .1rem;
+  .insp .container .card .copy .label {
+    font-size: 0.8rem;
+    letter-spacing: 0.1rem;
     color: lightgray;
     background-color: black;
     display: inline;
     padding: 2px 8px;
     border-radius: 4px;
-}
+  }
 
-.insp .container .card .copy .title {
+  .insp .container .card .copy .title {
     font-family: Times New Roman, serif;
     font-weight: lighter;
     font-size: 1.2rem;
-}
+  }
 
-.insp .container .card .copy  .text {
+  .insp .container .card .copy .text {
     font-size: 1rem;
-}
+  }
 
- /*-------------------------FORM-------------------------------------------*/
+  /*-------------------------FORM-------------------------------------------*/
 
- .form{
-     
+  .form {
+    /*Permite que le pueda dar alto y ancho al contenedor*/
+    display: inline-block;
+    height: 1056px;
+    width: 100%;
 
-     /*Permite que le pueda dar alto y ancho al contenedor*/
-display: inline-block;
-height: 1056px;
-width: 100%;
+    /*En este caso el flex permite centrar el contenido del contenedor*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
 
-/*En este caso el flex permite centrar el contenido del contenedor*/
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: top;
+    /*se le indica la imagen de fondo y el contain hace que se adapte sin cortarse*/
+    background: url("  data/BackgroundFormMobile-2.png") no-repeat center;
 
+    /* -- arreglo temporal para superponer la bolsa con el form-- */
+    margin-top: -30vh;
+  }
 
+  .form .greenContainer {
+    margin-top: 35vh;
+    height: 100%;
+    width: 100%;
+    font-size: 15px;
+  }
 
-/*se le indica la imagen de fondo y el contain hace que se adapte sin cortarse*/
-background: url("  data/BackgroundFormMobile-2.png") no-repeat center ;
+  .form .greenContainer {
+    display: flex;
 
- /* -- arreglo temporal para superponer la bolsa con el form-- */
- margin-top: -30vh;
+    flex-direction: column;
 
+    width: 80%;
+    margin-top: 20vh;
+  }
 
-
- }
-
- .form .greenContainer{
-
-  
-  margin-top: 35vh;
-  height: 65%;
-  font-size: 15px;
-
- }
-
- .form .greenContainer {
-    
-   display: flex;
-   
-   flex-direction: column;
-   
-      width: 80%;
-   margin-top: 20vh;
-  
-
- }
-
- .form .greenContainer h2{
-     margin-top:3vh ;
+  .form .greenContainer h2 {
+    margin-top: 3vh;
     font-size: 5.5rem;
     margin-bottom: 3vh;
-    }
-      
+  }
 
-  .form .greenContainer  p {
+  .form .greenContainer p {
     margin-bottom: 3vh;
-    }
+  }
 
-    input, textarea{
-        border: 0;
-        outline: none;
-        text-align: left;
-        padding-left: 2rem;
+  input,
+  textarea {
+    border: 0;
+    outline: none;
+    text-align: left;
+    padding-left: 2rem;
+  }
 
-    }
+  .field {
+    display: inline-block;
+    border: #b1c211 solid 3px;
+    width: 70%;
+    height: 4.5vh;
+    margin-bottom: 2vh;
+  }
 
-    .field{
+  .form .greenContainer .button {
+    margin-top: 8vh;
+  }
 
-        display: inline-block;
-        border: #B1C211 solid 3px;
-        width: 70%;
-        height: 4.5vh;
-        margin-bottom: 2vh;
-    }
+  .form section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-    
+  /*-------------------------FOOTER-------------------------------------------*/
 
-    
-    .form .greenContainer  .button{
+  footer {
+    /*Permite que le pueda dar alto y ancho al contenedor*/
+    display: inline-block;
+    height: 344px;
+    width: 100%;
 
-        margin-top: 8vh;
-        margin-bottom: 8vh;
-        
+    /*En este caso el flex permite centrar el contenido del contenedor*/
+    display: flex;
+    flex-direction: column;
+    align-items: top;
+    justify-content: center;
 
-        
-    }
+    /*se le indica la imagen de fondo y el contain hace que se adapte sin cortarse*/
+    background: url("  data/footerMobile.png") no-repeat center;
 
-   
+    /* -- arreglo temporal para superponer la bolsa con el form-- */
+    margin-top: -5vh;
+  }
 
-/*-------------------------FOOTER-------------------------------------------*/
+  footer section {
+    width: 100%;
+    height: 344px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
 
-footer{
-
-      /*Permite que le pueda dar alto y ancho al contenedor*/
-display: inline-block;
-height: 344px;
-width: 100%;
-
-/*En este caso el flex permite centrar el contenido del contenedor*/
-display: flex;
-flex-direction: column;
-align-items: top;
-justify-content: center;
-
-
-
-
-/*se le indica la imagen de fondo y el contain hace que se adapte sin cortarse*/
-background: url("  data/footerMobile.png") no-repeat center ;
-
- /* -- arreglo temporal para superponer la bolsa con el form-- */
- margin-top: -5vh;
-
-
-}
-
-footer section{
-width: 100%;
-height: 344px;
-display: flex;
-flex-direction: column;
-justify-content: space-evenly;
-
-
-}
-
-
-
-footer section h4{
-    
-    font-family: 'Playfair Display', serif;
+  footer section h4 {
+    font-family: "Playfair Display", serif;
     font-size: 4rem;
     font-weight: bolder;
     margin-left: 10rem;
+  }
 
-}
-
-footer  section div h5{
-
-    font-family: 'Chivo', sans-serif;
+  footer section div h5 {
+    font-family: "Chivo", sans-serif;
     font-size: 3rem;
     margin-left: 10rem;
-}
+  }
 
-footer section div div{
+  footer section div div {
     width: 45%;
-       margin-left: 10rem;
-       margin-top: 2rem;
-      display: flex;
-       justify-content: space-between;
-}
+    margin-left: 10rem;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /*==================interacción======================*/
+  #seccion-feedback {
+    background-color: #fff;
+  }
+
+  .mostrar {
+    display: flex;
+  }
+  .no-mostrar {
+    display: none !important;
+  }
+
+  .fondo-popup {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+
+    background-color: rgba(0, 0, 0, 0.75);
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .fondo-popup .popup {
+    width: 80%;
+    height: 55%;
+    padding: 1%;
+    padding-bottom: 3%;
+    font-family: "Chivo";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4rem;
+    line-height: 7rem;
+    text-align: center;
+
+    color: #000000;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .fondo-popup .popup button:first-child {
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    align-self: end;
+    padding-bottom: 5vh;
+    margin: 3%;
+  }
+
+  .fondo-popup .popup button:last-child {
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: 2px solid #000000;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 11px;
+    width: 50%;
+    height: 15%;
+    display: inline-block;
+    color: #000000;
+    margin-top: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4vh;
+  }
+
+  #nombre {
+    font-family: "Playfair Display";
+    font-style: italic;
+    font-weight: 900;
+  }
 }
 
 /*--------------------------------desktop------------------------*/
 
 @media (min-width: 1024px) {
-
-/*
+  /*
 =====================================Clases generales DESKTOP =========================================
 */
-.data-mobile{
+  .data-mobile {
     display: none;
-}
+  }
 
-.data-desktop{
+  .data-desktop {
     display: inline-block;
-}
+  }
 
-
-.button{
-    background-color: #B1C211;
-    font-family: 'Chivo', sans-serif;
+  .button {
+    background-color: #b1c211;
+    font-family: "Chivo", sans-serif;
     border-radius: 11px;
     border: none;
     font-weight: bold;
     color: #ffffff;
     padding: 2rem 5rem;
     font-size: 3rem;
-    cursor:pointer;
-    }
+    cursor: pointer;
+  }
 
-    .button__form{
+  .button__form {
+    padding-left: 8rem;
+    padding-right: 8rem;
 
-        padding-left: 8rem;
-        padding-right: 8rem;
-        margin-top: 8vh;
-        padding-top: 4rem;
-        padding-bottom: 4rem;
-       /* margin-bottom: 8vh;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    /* margin-bottom: 8vh;
         margin-top: 14vh;*/
-        cursor:pointer;
-    }
+    cursor: pointer;
+  }
 
-    .greenContainer{
-        /* -- borde -- */
-  width: 80%;
-  height: 70%;
-  display: inline-block;
-  border: #B1C211 solid 5px;
+  .greenContainer {
+    /* -- borde -- */
+    width: 60%;
+    height: 70%;
+    display: inline-block;
+    border: #b1c211 solid 5px;
 
-   /* -- contenido -- */
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-   text-align: center;
+    /* -- contenido -- */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
 
-   }
+  .banner__pimienta-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
 
-   .banner__pimienta-flex{
-       display: flex;
-       flex-direction: row;
-         align-items: center;
-   }
-
-   .double-line-container__title{
-    
-    border: 8px solid #D8615A;
+  .double-line-container__title {
+    border: 8px solid #d8615a;
     border-style: double;
     font-size: 4rem;
     padding: 6rem 2rem;
     width: 25%;
     text-align: center;
+  }
 
-   
-
-}
-
- 
-.double-line-container__content{
+  .double-line-container__content {
     /*Permite que le pueda dar alto y ancho al contenedor*/
     display: inline-block;
-   width: 358px;
-   height: 535px;
-    
+    width: 358px;
+    height: 535px;
 
     /*En este caso el flex permite centrar el contenido del contenedor*/
     display: flex;
@@ -855,83 +915,98 @@ footer section div div{
     align-items: center;
     justify-content: center;
 
-
     /*se le indica la imagen de fondo y el contain hace que se adapte sin cortarse*/
-    background: url("  data/double-line-container-desktop.png") no-repeat center ;
+    background: url("  data/double-line-container-desktop.png") no-repeat center;
     background-size: 90%;
-   
+  }
 
-   
+  .double-line-container__content__row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 5rem;
+  }
 
-}
-
-.double-line-container__content__row{
-
-   display: flex;
-   flex-direction: row;
-   align-items: center;
-   margin-bottom: 5rem;
-
-}
-
-
-
-/*
+  /*
 =============================Etiquetas DESKTOP=================================
 */
 
-html  {
+  html {
     font-size: 5px;
-    font-family: 'Chivo', sans-serif;
+    font-family: "Chivo", sans-serif;
+  }
 
-}
+  /*--------------HEADER DESKTOP------------------------------------*/
 
-/*--------------HEADER DESKTOP------------------------------------*/
+  header div:first-child {
+    background-color: #be8253;
+    font-size: 1.8rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    text-align: center;
+    color: #ffffff;
+    font-weight: normal;
+  }
 
+  header div:last-child {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2.5rem;
+    box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.6);
+  }
 
-
-header  div:first-child {
-background-color: #BE8253;
-font-size: 2rem;
-padding-top:  1.5rem;
-padding-bottom: 1.5rem;
-text-align: center;
-color: #ffffff;
-font-weight: normal;
-}
-
-header  div:last-child {
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-align-items: center;
-padding: 3rem 4rem;
-box-shadow: 0 3px 5px 0px rgba(0,0,0,0.6);
-}
-
-header div h2{
-
-    font-family: 'Playfair Display', serif;
-    font-size: 6rem;
+  header div h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 4.5rem;
     font-weight: 800;
-    }
+  }
 
-    header {
+  header {
+    background-color: #ffffff;
+    position: sticky; /* Set the navbar to fixed position */
+    z-index: 5; /* Set z-index to 1 so it does not hide content */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+  }
+
+  .btn {
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+   }
    
-        background-color: #ffffff;
-        position: sticky; /* Set the navbar to fixed position */
-        z-index: 1; /* Set z-index to 1 so it does not hide content */
-        top: 0; /* Position the navbar at the top of the page */
-        width: 100%; /* Full width */
-        
-        }
+   .btn:hover {
+    color: black;
+   }
+   
+   .btn:after {
+    content: "";
+    background:#E5C545;
+    position: absolute;
+    z-index: -1;
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+    transition: all 0.5s;
+   }
+   
+   .btn:hover:after {
+    transform: skewX(-45deg) scale(1, 1);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+   }
 
 
 
 
-/*--------------BANNER DESKTOP----------------------*/
+  /*--------------BANNER DESKTOP----------------------*/
 
-.banner{
+  .banner {
     /*Permite que le pueda dar alto y ancho al contenedor*/
     display: inline-block;
     height: calc(100vh - 100px);
@@ -942,629 +1017,1162 @@ header div h2{
     align-items: center;
     justify-content: center;
 
-
     /*se le indica la imagen de fondo y el contain hace que se adapte sin cortarse*/
-    background: url("  data/BackgroundFormDesktop-1.png") no-repeat center ;
+    background: url("  data/BackgroundFormDesktop-1.png") no-repeat center;
     background-size: cover;
-    
-}
+  }
 
-
-.banner div h3{
+  .banner div h3 {
     font-size: 5rem;
     font-weight: 400;
-    
-}
+  }
 
-.banner div h4{
+  .banner div h4 {
     font-size: 5rem;
-    font-family:  'Playfair Display', serif; 
+    font-family: "Playfair Display", serif;
     font-weight: 800;
     margin-bottom: 5vh;
-    
-}
+  }
 
-.banner div p{
+  .banner div p {
     font-size: 3rem;
     width: 90%;
-    
-    
-}
+  }
 
-.banner div b{
+  .banner div b {
     font-size: 3rem;
     font-weight: 800;
+  }
     
-}
 
-.banner .greenContainer{
-padding-top: 5rem;
-padding-bottom: 5rem;
-}
+  .banner .greenContainer button {
+    margin-top: 3vh;
+  }
 
-
-
-.banner .greenContainer .banner__pimienta-flex  img{
+  .banner .greenContainer .banner__pimienta-flex img {
     width: 30%;
     height: auto;
-    
-}
-.banner .greenContainer .banner__pimienta-flex div{
+  }
+  .banner .greenContainer .banner__pimienta-flex div {
     text-align: left;
     line-height: 20px;
     margin-right: 5rem;
-    
+  }
+
+  .banner .greenContainer .banner__pimienta-flex div p {
+    width: 100%;
+  }
+
+  .fade-in-top {
+    -webkit-animation: fade-in-top 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+            animation: fade-in-top 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  }
+
+ /* ----------------------------------------------
+ * Generated by Animista on 2022-5-15 20:34:41
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation fade-in-top
+ * ----------------------------------------
+ */
+@-webkit-keyframes fade-in-top {
+  0% {
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-in-top {
+  0% {
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
 }
 
-.banner .greenContainer .banner__pimienta-flex div p{
-   width: 100%;
-      
+.shake-br {
+	-webkit-animation: shake-br 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+	        animation: shake-br 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
 }
-/*--------INTRO DESKTOP-------------------------------*/
+/* ----------------------------------------------
+ * Generated by Animista on 2022-5-16 1:8:15
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
 
-.intro {
+/**
+ * ----------------------------------------
+ * animation shake-br
+ * ----------------------------------------
+ */
+ @-webkit-keyframes shake-br {
+  0%,
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-transform-origin: 100% 100%;
+            transform-origin: 100% 100%;
+  }
+  10% {
+    -webkit-transform: rotate(2deg);
+            transform: rotate(2deg);
+  }
+  20%,
+  40%,
+  60% {
+    -webkit-transform: rotate(-4deg);
+            transform: rotate(-4deg);
+  }
+  30%,
+  50%,
+  70% {
+    -webkit-transform: rotate(4deg);
+            transform: rotate(4deg);
+  }
+  80% {
+    -webkit-transform: rotate(-2deg);
+            transform: rotate(-2deg);
+  }
+  90% {
+    -webkit-transform: rotate(2deg);
+            transform: rotate(2deg);
+  }
+}
+@keyframes shake-br {
+  0%,
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-transform-origin: 100% 100%;
+            transform-origin: 100% 100%;
+  }
+  10% {
+    -webkit-transform: rotate(2deg);
+            transform: rotate(2deg);
+  }
+  20%,
+  40%,
+  60% {
+    -webkit-transform: rotate(-4deg);
+            transform: rotate(-4deg);
+  }
+  30%,
+  50%,
+  70% {
+    -webkit-transform: rotate(4deg);
+            transform: rotate(4deg);
+  }
+  80% {
+    -webkit-transform: rotate(-2deg);
+            transform: rotate(-2deg);
+  }
+  90% {
+    -webkit-transform: rotate(2deg);
+            transform: rotate(2deg);
+  }
+}
+
+  
+
+ /*================animacion======================*/
+
+
+
+  /*--------INTRO DESKTOP-------------------------------*/
+
+  .intro {
     display: flex;
     flex-direction: column;
 
-      /*Permite que le pueda dar alto y ancho al contenedor*/
-      display: inline-block;
-      height: 705px;
-      width: 100%;
-  
-      /*En este caso el flex permite centrar el contenido del contenedor*/
-      display: flex;
-      align-items: center;
-        justify-content: center;
-  
-  
-      /*se le indica la imagen de fondo y el contain hace que se adapte sin cortarse*/
-      background: url("  data/BolsaPapelRasgadoConSombra.png") no-repeat center ;
-      background-size: contain;
+    /*Permite que le pueda dar alto y ancho al contenedor*/
+    display: inline-block;
+    height: 705px;
+    width: 100%;
 
-      /* -- arreglo temporal para superponer la bolsa con el form-- */
+    /*En este caso el flex permite centrar el contenido del contenedor*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-      margin-top: -188px;
-      padding-top: 12rem;
-      
-}
+    /*se le indica la imagen de fondo y el contain hace que se adapte sin cortarse*/
+    background: url("  data/BolsaPapelRasgadoConSombra.png") no-repeat center;
+    background-size: contain;
 
+    /* -- arreglo temporal para superponer la bolsa con el form-- */
 
-.intro .data-desktop{
+    margin-top: -188px;
+    
+  }
+
+  .intro .data-desktop {
     width: 80%;
     height: auto;
     display: flex;
-   padding-bottom: 13vh;
-}
+    
+  }
 
+  .intro div {
+    width: 75%;
+    color: #ffffff;
+  }
 
-
-.intro div{
-   width:75%;
-   color: #ffffff;
-   
-  
-}
-
-.intro  .data-desktop div:first-child{
+  .intro .data-desktop div:first-child {
     line-height: 30px;
-}
+  }
 
-.intro  .data-desktop div:last-child   h1{
+  .intro .data-desktop div:last-child h1 {
+    font-size: 6rem;
+    font-family: "Playfair Display", serif;
+    font-weight: bolder;
+    margin-top: 6vh;
+    margin-bottom: 1vh;
+  }
 
-font-size: 6rem;
-font-family: 'Playfair Display', serif;  
-font-weight: bolder;
-margin-top: 6vh;
-margin-bottom:1vh;
+  .intro .data-desktop div:last-child {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10vh;
+  }
 
-
-}
-
-.intro  .data-desktop div:last-child{
-height: 80%;
-display: flex;
-flex-direction: column;
-text-align: center;
-justify-content: space-between;
-
-
-}
-
-.intro  .data-desktop div:first-child h2{
-
+  .intro .data-desktop div:first-child h2 {
     font-size: 3rem;
     font-weight: bold;
-    
-    
-    }
+  }
 
-.intro  .data-desktop div:first-child p{
-
+  .intro .data-desktop div:first-child p {
     font-size: 3rem;
     margin-top: 5vh;
     margin-bottom: 5vh;
     font-weight: 200;
+  }
 
-
-}
-
-
-
-.intro .data-desktop div:last-child button{
-     
+  .intro .data-desktop div:last-child button {
     background-color: Transparent;
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     border: 2px solid #ffffff;
-    cursor:pointer;
+    cursor: pointer;
     overflow: hidden;
-    border-radius: 11px; 
+    border-radius: 11px;
     width: 40%;
     height: 20%;
     display: inline-block;
     color: #ffffff;
+    margin-top: 8vh;
+  }
 
+  .btn_white {
+    display: inline-block;
+    transition: all 0.2s ease-in;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+   }
+   
+   .btn_white:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.25);
+    top: 100%;
+    width: 140%;
+    height: 180%;
+    background-color: #B1C211;
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+   }
+   
+   .btn_white:after {
+    content: "";
+    position: absolute;
+    left: 55%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.45);
+    top: 180%;
+    width: 160%;
+    height: 190%;
+    background-color: #B1C211;
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+   }
+   
+   .btn_white:hover {
+    color: #ffffff;
+    border: 1px solid #ffffff;
+   }
+   
+   .btn_white:hover:before {
+    top: -35%;
+    background-color: #B1C211;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+   }
+   
+   .btn_white:hover:after {
+    top: -45%;
+    background-color: #B1C211;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+   }
 
-    /* -- arreglo temporal hasta entender por qué no puedo centrarlo en el eje X al botón-- */
-   margin-left: 30rem;
+   .fade-in {
+    -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+            animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  }
+
+  /* ----------------------------------------------
+ * Generated by Animista on 2022-5-15 20:37:5
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation fade-in
+ * ----------------------------------------
+ */
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-/*--------------------------NUTRICIONAL DESKTOP-------------------------------------------*/
 
- 
-    
-  .nutricional .data-desktop{
-  
-      /*ajusta el ancho de la imagen al contenedor*/
-      width:100%;
-      height: auto;
-      object-fit: contain;
-      
-  } 
+  /*--------------------------NUTRICIONAL DESKTOP-------------------------------------------*/
 
-
-  
-
-  .double-line-container__title{
-        /* -- arreglo temporal por superponer el div a la imagen de abajo */
-        margin-bottom: -60rem;
-         margin-left: 40rem;
-        
+  /*
+  .nutricional div:last-child {
+    display: flex;
+    flex-direction: row-reverse;
   }
-  
-  
-/*-------------------------INTRO P Y P DESKTOP -------------------------------------------*/
+  .nutricional div:last-child img:first-child {
+    align-self: end;
+  }
+  .nutricional .data-desktop {
+    /*ajusta el ancho de la imagen al contenedor
+    height: auto;
+    object-fit: contain;
+  }
+*/
+
+.nutricional{
+    display: flex;
+    flex-direction: column;
+
+    /*Permite que le pueda dar alto y ancho al contenedor*/
+    display: inline-block;
+    height: 766px;
+    width: 100%;
+
+    /*En este caso el flex permite centrar el contenido del contenedor*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /*se le indica la imagen de fondo y el contain hace que se adapte sin cortarse*/
+    background: url("  data/nutricional-background-desktop.png") no-repeat center;
+    background-size: cover;
+    margin-top: -50rem;
+      }
 
 
-.intro-pyp{
+  .double-line-container__title {
+    /* -- arreglo temporal por superponer el div a la imagen de abajo */
+    
+    margin-right: 150rem;
+    margin-bottom: 30rem;
+  }
+
+  .fade-in-left {
+    -webkit-animation: fade-in-left 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+            animation: fade-in-left 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  }
+
+  /* ----------------------------------------------
+ * Generated by Animista on 2022-5-15 21:6:30
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation fade-in-left
+ * ----------------------------------------
+ */
+@-webkit-keyframes fade-in-left {
+  0% {
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-in-left {
+  0% {
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+  
+
+  /*-------------------------INTRO P Y P DESKTOP -------------------------------------------*/
+
+  .intro-pyp {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     margin-top: 8rem;
+  }
 
-}
-
-
-.intro-pyp div:last-child{
-  display: flex;
+  .intro-pyp div:last-child {
+    display: flex;
     flex-direction: column;
     font-size: 4rem;
     text-align: center;
-    }
+  }
+
+  .intro-pyp div:last-child div:nth-child(2) {
+    /*tuve que ponerlelos estilos llamando a la etiqueta contenedora y no poniendole la clase double-line-container__title porque invertía el orden de los divs como un column reverse*/
+    border: 8px solid #e57c54;
+    font-size: 4rem;
+    border-style: double;
+    padding: 6rem 8rem;
+  }
+
+  .intro-pyp div:last-child p {
+    margin-top: 4vh;
+    font-size: 3rem;
+    line-height: 150%;
+    text-align: center;
+    font-weight: 400;
+  }
 
 
+  .fade-in-top {
+    -webkit-animation: fade-in-top 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+            animation: fade-in-top 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  }
+
+  /* ----------------------------------------------
+ * Generated by Animista on 2022-5-15 21:11:16
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation fade-in-top
+ * ----------------------------------------
+ */
+@-webkit-keyframes fade-in-top {
+  0% {
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-in-top {
+  0% {
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
 
 
+  /*----------P Y P DESKTOP-----------------------------------*/
 
-    .intro-pyp div:last-child div:nth-child(2){
+  .pyp {
+    margin-top: 20vh;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
 
-        /*tuve que ponerlelos estilos llamando a la etiqueta contenedora y no poniendole la clase double-line-container__title porque invertía el orden de los divs como un column reverse*/
-        border: 8px solid #E57C54;
-        font-size: 4rem;
-        border-style: double;
-        padding: 6rem 8rem;
-
-    }
-
-        .intro-pyp div:last-child p{
-
-                margin-top: 4vh;
-                font-size: 3rem;
-                line-height: 150%;
-                text-align: center;
-                font-weight: 400;
-                
-              
-
-
-        }
-        
-
- /*----------P Y P DESKTOP-----------------------------------*/
-
- 
- .pyp{
-     margin-top: 30vh;
-     width: 100%;
-     height: auto;
-     display: flex;
-     justify-content: space-evenly;
- }
- 
- 
- .pyp img{
+  .pyp img {
     margin-left: 3rem;
     margin-top: 3rem;
-}
-.pyp p{
+  }
+  .pyp p {
     font-size: 3rem;
-}
+  }
 
-.pyp h3{
+  .pyp h3 {
     font-size: 6rem;
-   
-   }
+  }
 
-   .pyp .double-line-container__content .double-line-container__content__row h3{
-    
-    
+  .pyp .double-line-container__content .double-line-container__content__row h3 {
     margin-left: 4rem;
     margin-top: 4vh;
-   }
+  }
 
-   .pyp .double-line-container__content  h3{
-    
-    
+  .pyp .double-line-container__content h3 {
     margin-left: 4rem;
     margin-top: 4vh;
     margin-left: 32rem;
-   }
+  }
 
-
-
-   
-
-
-.double-line-container__content div {
-
+  .double-line-container__content div {
     margin-left: -4rem;
-} 
+  }
 
-.double-line-container__content div:nth-child(2) p{
-   margin-left: 5rem;
-}
+  .double-line-container__content div:nth-child(2) p {
+    margin-left: 5rem;
+  }
 
-.double-line-container__content p{
-
+  .double-line-container__content p {
     margin-left: -8rem;
-}
+  }
 
-.double-line-container__content div:last-child {
-   
+  .double-line-container__content div:last-child {
     margin-top: 3rem;
-   }
+  }
 
-.double-line-container__content div:last-child p{
- font-size: 2rem;
- margin-bottom: 3rem;
- margin-left: 4rem;
- margin-top: 3rem;
- 
+  .double-line-container__content div:last-child p {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    margin-left: 4rem;
+    margin-top: 3rem;
+  }
+
+
+  
+
+.fade-in-right {
+	-webkit-animation: fade-in-right 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in-right 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
-    
-   /*-------------------------INSPIRACIÓN-------------------------------------------*/
 
-.insp{
+/* ----------------------------------------------
+ * Generated by Animista on 2022-5-15 21:16:22
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
 
+/**
+ * ----------------------------------------
+ * animation fade-in-right
+ * ----------------------------------------
+ */
+ @-webkit-keyframes fade-in-right {
+  0% {
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-in-right {
+  0% {
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+  /*-------------------------INSPIRACIÓN DESKTOP-------------------------------------------*/
+
+  .insp {
     /*Permite que le pueda dar alto y ancho al contenedor*/
     display: inline-block;
     height: 1266px;
     width: 100%;
-    
+
     /*En este caso el flex permite centrar el contenido del contenedor*/
     display: flex;
     flex-direction: column;
     /*align-items: center;
     justify-content: top;*/
-    
-    
-    
+
     /*se le indica la imagen de fondo y el contain hace que se adapte sin cortarse*/
-    background: url("  data/motivacionBackgroundDesktop.png") no-repeat center ;
+    background: url("  data/motivacionBackgroundDesktop.png") no-repeat center;
     background-size: cover;
-    
-    }
-    
-    .insp div:first-child{
-        font-size: 5rem;
-        text-align: right;
-        margin-top: 30rem;
-        margin-right: 8rem;
-        margin-bottom: 5rem;
-    }
 
-    
-    .insp .data-desktop{
-        display: flex;
-        flex-direction: column;
-        align-items: end;
-        margin-top: 14vh;
-    }
+    padding-top: 6vh;
+  }
 
-    .insp .data-desktop div:last-child{
-        font-size: 4.5rem;
-        display: flex;
-        margin-top: 8vh;
-        margin-right: 110rem;
-        justify-self: center;
-       
-    }
+  .insp div:first-child {
+    font-size: 5rem;
+    text-align: right;
+    margin-top: 30rem;
+    margin-right: 8rem;
+    margin-bottom: 5rem;
+  }
 
-    .insp .data-desktop img{
-        width: 40%;
-        height: auto;
-      }
-
-    .insp .data-desktop div:last-child h3{
-      padding-top: 0.23rem;
-      font-weight: 600;
-    }
-
-
-    .insp .data-desktop div:last-child h4{
-       
-        display: flex;
-       
-        margin-left:2rem;
-
-       
-    }
-
-    
-    .insp div img{
-        margin-right: 10rem;
-    
-    }
-    
-    .insp div h4{
-        font-family: 'Playfair Display', serif;
-        font-weight: bolder;
-    
-    }
-    
-    .insp .container {
-        display: flex;
-        padding: 0 2rem;
-        overflow-x: auto;
-        margin-left: 5rem;
-        scroll-snap-type: both mandatory;
-        margin-top: 4vh;
-    }
-    
-    .insp .container .card {
-        position: relative;
-        height: 450px;
-        margin-top: 1rem;
-        margin-right: 1rem;
-        
-        
-        background-size: cover;
-        border-radius: 8px;
-        
-        scroll-snap-align: start;
-        scroll-margin: 2rem;
-        transition: all .4s ease-in-out;
-        
-        
-        
-    }
-    
-    .insp  .container .card :hover {
-        box-shadow: 0 .4rem 2rem rgba(0, 0, 0, .2), inset 0 0 1px white;
-    }
-    .insp .container .card a {
-        text-decoration: none;
-        color: black;
-    }
-    
-    .insp .container .card .thumb {
-        width: 80vw;
-        max-width: 480px;
-        height: 120px;
-        overflow: hidden;
-        border-radius: 8px 8px 0 0;
-       
-    }
-    
-    .insp .container .card .thumb img {
-        width: 100%;
-    }
-    
-    .insp .container .card .copy {
-        position: absolute;
-        bottom: 0;
-        top: auto;
-        left: 0;
-        right: 0;
-        padding: 1rem;
-        background-color: rgba(255, 255, 255, .9);
-        border-radius: 0 0 8px 8px;
-       
-        
-       
-    }
-    
-    .insp .container .card .copy .label {
-        font-size: .8rem;
-        letter-spacing: .1rem;
-        color: lightgray;
-        background-color: black;
-        display: inline;
-        padding: 2px 8px;
-        border-radius: 4px;
-    }
-    
-    .insp .container .card .copy .title {
-        font-family: Times New Roman, serif;
-        font-weight: lighter;
-        font-size: 1.2rem;
-    }
-    
-    .insp .container .card .copy  .text {
-        font-size: 1rem;
-    }
-    
-     /*-------FORM DESKTOP------------------------------------*/
-
- .form{
-     
-
-    /*Permite que le pueda dar alto y ancho al contenedor*/
-display: inline-block;
-height: 1429px;
-width: 100%;
-
-/*En este caso el flex permite centrar el contenido del contenedor*/
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: top;
-
-
-
-/*se le indica la imagen de fondo y el contain hace que se adapte sin cortarse*/
-background: url("  data/BackgroundFormDesktop-2.png") no-repeat center ;
-
-/* -- arreglo temporal para superponer la bolsa con el form-- */
-margin-top: -60vh;
-
-
-
-}
-
-
-.form .greenContainer {
-   
-  display: flex;
-  font-size: 15px;
-  flex-direction: column;
-  height: 32%;
-  width: 60%;
-  margin-top: 70vh;
- 
-
-}
-
-.form .greenContainer h2{
-    margin-top:3vh ;
-   font-size: 5.5rem;
-   margin-bottom: 3vh;
-   }
-     
-
- .form .greenContainer  p {
-   margin-bottom: 3vh;
-   }
-
-   input, textarea{
-       border: 0;
-       outline: none;
-       text-align: left;
-       padding-left: 2rem;
-      
-
-   }
-
-   .field{
-      text-align: center;
-       display: inline-block;
-       border: #B1C211 solid 3px;
-       width: 48%;
-       height: 4.5vh;
-       margin-bottom: 2vh;
-   }
-
-   
-
-   
-   .form .greenContainer  .button{
-
-       margin-top: 8vh;
-      /* margin-bottom: 8vh;*/
-       
-
-       
-   }
-
-/*-------------------------FOOTER-------------------------------------------*/
-
-footer{
-
-    /*Permite que le pueda dar alto y ancho al contenedor*/
-display: inline-block;
-height: 294px;
-width: 100%;
-
-/*En este caso el flex permite centrar el contenido del contenedor*/
-display: flex;
-flex-direction: column;
-align-items: top;
-justify-content: center;
-
-
-
-
-/*se le indica la imagen de fondo y el contain hace que se adapte sin cortarse*/
-background: url("  data/footerDesktop.png") no-repeat center ;
-
-/* -- arreglo temporal para superponer la bolsa con el form-- */
-margin-top: -50vh;
-
-justify-content: space-evenly;
-
-}
-
-footer section{
-    margin-left: 10rem;
-}
-
-
-footer h4{
-  
-  font-family: 'Playfair Display', serif;
-  font-size: 5rem;
-  font-weight: bolder;
-  margin-left: 10rem;
-
-}
-
-footer div h5{
-
-  font-family: 'Chivo', sans-serif;
-  font-size: 3rem;
-  margin-left: 10rem;
-  margin-left: calc(50% - 7.5rem);
-}
-
-footer div{
-    margin-top: 5vh;
-    margin-left: 40rem;
-}
-
-  
-footer div div{
-  width: 15%;
-     margin-left: calc(50% - 7.5rem);
-     margin-top: 2rem;
+  .insp .data-desktop {
     display: flex;
-     justify-content: space-between;
+    flex-direction: column;
+    align-items: end;
+    margin-top: 4vh;
+  }
+
+  .insp .data-desktop div:last-child {
+    font-size: 4.5rem;
+    display: flex;
+    margin-top: 8vh;
+    margin-right: 140rem;
+    justify-self: center;
+  }
+
+  .insp .data-desktop img {
+    width: 40%;
+    height: auto;
+  }
+
+  .insp .data-desktop div:last-child h3 {
+    padding-top: 0.23rem;
+    font-weight: 600;
+  }
+
+  .insp .data-desktop div:last-child h4 {
+    display: flex;
+
+    margin-left: 2rem;
+  }
+
+  .insp div img {
+    margin-right: 10rem;
+  }
+
+  .insp div h4 {
+    font-family: "Playfair Display", serif;
+    font-weight: bolder;
+  }
+
+  .insp .container {
+    display: flex;
+    padding: 0 2rem;
+    overflow-x: auto;
+    margin-left: 5rem;
+    scroll-snap-type: both mandatory;
+    margin-top: 4vh;
+
+  }
+
+  .insp .container::-webkit-scrollbar-button:single-button:horizontal:decrement{
+    
+    background-image: url("  data/flechaIzq.png") ;
+    background-size: contain;
+   
 }
 
-footer div div img{
-    width: 25%;
-    height: auto;
+    .insp .container::-webkit-scrollbar-button:single-button:increment{
+        background-image: url("  data/flechaDer.png") ;
+        background-size: contain;
+        }
+
+        /* width */
+        .insp .container::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  .insp .container::-webkit-scrollbar-track {
+    display:none; 
+  }
+   
+  /* Handle */
+  .insp .container::-webkit-scrollbar-thumb {
+    display:none;
+  }
+  
+  /* Handle on hover */
+  .insp .container::-webkit-scrollbar-thumb:hover {
+    background: transparent; 
   }
 
 
 
+
+
+
+  .insp .container .card {
+    position: relative;
+    height: 450px;
+    margin-top: 1rem;
+    margin-right: 1rem;
+
+    background-size: cover;
+    border-radius: 8px;
+
+    scroll-snap-align: start;
+    scroll-margin: 2rem;
+    transition: all 0.4s ease-in-out;
+  }
+
+  .insp .container .card :hover {
+    box-shadow: 0 0.4rem 2rem rgba(0, 0, 0, 0.2), inset 0 0 1px white;
+  }
+  .insp .container .card a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .insp .container .card .thumb {
+    width: 80vw;
+    max-width: 480px;
+    height: 120px;
+    overflow: hidden;
+    border-radius: 8px 8px 0 0;
+  }
+
+  .insp .container .card .thumb img {
+    width: 100%;
+  }
+
+  .insp .container .card .copy {
+    position: absolute;
+    bottom: 0;
+    top: auto;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 0 0 8px 8px;
+  }
+
+  .insp .container .card .copy .label {
+    font-size: 0.8rem;
+    letter-spacing: 0.1rem;
+    color: lightgray;
+    background-color: black;
+    display: inline;
+    padding: 2px 8px;
+    border-radius: 4px;
+  }
+
+  .insp .container .card .copy .title {
+    font-family: Times New Roman, serif;
+    font-weight: lighter;
+    font-size: 1.2rem;
+  }
+
+  .insp .container .card .copy .text {
+    font-size: 1rem;
+  }
+
+  /*-------FORM DESKTOP------------------------------------*/
+
+  .form {
+    /*Permite que le pueda dar alto y ancho al contenedor*/
+
+    height: 1429px;
+    width: 100%;
+
+    /*En este caso el flex permite centrar el contenido del contenedor*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    justify-content: top;
+
+    /*se le indica la imagen de fondo y el contain hace que se adapte sin cortarse*/
+    background: url("  data/BackgroundFormDesktop-2.png") no-repeat center;
+
+    /* -- arreglo temporal para superponer la bolsa con el form-- */
+    margin-top: -60vh;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form .greenContainer {
+    display: flex;
+    font-size: 15px;
+    flex-direction: column;
+    height: 55%;
+    width: 40%;
+    margin-top: 70vh;
+  }
+
+  .form .greenContainer h2 {
+    margin-top: 3vh;
+    font-size: 5.5rem;
+    margin-bottom: 3vh;
+  }
+
+  .form .greenContainer p {
+    margin-bottom: 3vh;
+  }
+
+  
+
+  input,
+  textarea {
+    border: 0;
+    outline: none;
+    text-align: left;
+    padding-left: 2rem;
+    align-items: center;
+  }
+
+  .field {
+    text-align: center;
+    display: inline-block;
+    border: #b1c211 solid 3px;
+    width: 150%;
+    align-self: center;
+    height: 4.5vh;
+    margin-bottom: 2vh;
+  }
+
+  .form section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .fade-in-bottom {
+    -webkit-animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+            animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  }
+ /* ----------------------------------------------
+ * Generated by Animista on 2022-5-15 21:19:41
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation fade-in-bottom
+ * ----------------------------------------
+ */
+@-webkit-keyframes fade-in-bottom {
+  0% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
 }
+@keyframes fade-in-bottom {
+  0% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+.input {
+  max-width: 190px;
+  height: 30px;
+  border: 2px solid transparent;
+  outline: none;
+  border-bottom: 2px solid #B1C211;
+  caret-color: #B1C211;
+  background-color: transparent;
+  padding: 5px;
+  transition: .5s linear;
+ 
+  letter-spacing: 1px;
+}
+
+.input:focus {
+  border: 2px solid #B1C211;
+  caret-color: black;
+  color: black;
+  box-shadow:  0 1px 1px rgba(0,0,0,0.12);
+}
+
+.input:focus::placeholder {
+  color: #B1C211;
+}
+ 
+  /*-------------------------FOOTER-------------------------------------------*/
+
+  footer {
+    /*Permite que le pueda dar alto y ancho al contenedor*/
+    display: inline-block;
+    height: 294px;
+    width: 100%;
+
+    /*En este caso el flex permite centrar el contenido del contenedor*/
+    display: flex;
+    flex-direction: column;
+    align-items: top;
+    justify-content: center;
+
+    /*se le indica la imagen de fondo y el contain hace que se adapte sin cortarse*/
+    background: url("  data/footerDesktop.png") no-repeat center;
+
+    /* -- arreglo temporal para superponer la bolsa con el form-- */
+    margin-top: -3vh;
+
+    justify-content: space-evenly;
+  }
+
+  footer section {
+    margin-left: 10rem;
+  }
+
+  footer h4 {
+    font-family: "Playfair Display", serif;
+    font-size: 5rem;
+    font-weight: bolder;
+    margin-left: 10rem;
+  }
+
+  footer div h5 {
+    font-family: "Chivo", sans-serif;
+    font-size: 3rem;
+    margin-left: 10rem;
+    margin-left: calc(50% - 7.5rem);
+  }
+
+  footer div {
+    margin-top: 5vh;
+    margin-left: 40rem;
+  }
+
+  footer div div {
+    width: 15%;
+    margin-left: calc(50% - 7.5rem);
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  footer div div img {
+    width: 25%;
+    height: auto;
+  }
+
+  /*==================interacción======================*/
+  #seccion-feedback {
+    background-color: #fff;
+  }
+
+  .mostrar {
+    display: flex;
+  }
+  .no-mostrar {
+    display: none !important;
+  }
+
+  .fondo-popup {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+
+    background-color: rgba(0, 0, 0, 0.75);
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .fondo-popup .popup {
+    width: 50%;
+    height: 50%;
+    padding: 1%;
+    padding-bottom: 3%;
+    font-family: "Chivo";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.5rem;
+    line-height: 7rem;
+    text-align: center;
+
+    color: #000000;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  .fondo-popup .popup h3{
+      width: 80%;
+
+  }
+
+  .fondo-popup .popup h2{
+    font-size: 4rem;
+
+}
+
+  .fondo-popup .popup button:first-child {
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    align-self: end;
+    padding-bottom: 5vh;
+    font-size: 4rem;
+  }
+
+  .fondo-popup .popup button:last-child {
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: 2px solid #000000;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 11px;
+    width: 25%;
+    height: 20%;
+    display: inline-block;
+    color: #000000;
+    margin-top: 2vh;
+    padding: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #nombre {
+    font-family: "Playfair Display";
+    font-style: italic;
+    font-weight: 900;
+  }
+
+  .btn_black {
+    display: inline-block;
+    transition: all 0.2s ease-in;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+   }
+   
+   .btn_black:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.25);
+    top: 100%;
+    width: 140%;
+    height: 180%;
+    background-color: #B1C211;
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+   }
+   
+   .btn_black:after {
+    content: "";
+    position: absolute;
+    left: 55%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.45);
+    top: 180%;
+    width: 160%;
+    height: 190%;
+    background-color: #B1C211;
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+   }
+   
+   .btn_black:hover {
+    color: #000000;
+    border: 1px solid #000000;
+   }
+   
+   .btn_black:hover:before {
+    top: -35%;
+    background-color: #B1C211;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+   }
+   
+   .btn_black:hover:after {
+    top: -45%;
+    background-color: #B1C211;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+   }
+}
+
+/*
+
+.intro .start {
+  width: 0px;
+  background: #aae0aa;
+  -webkit-animation: eighty 2s ease-out forwards;
+     -moz-animation: eighty 2s ease-out forwards;
+      -ms-animation: eighty 2s ease-out forwards;
+       -o-animation: eighty 2s ease-out forwards;
+          animation: eighty 2s ease-out forwards;
+}
+
+
+*/

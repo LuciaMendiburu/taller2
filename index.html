@@ -4,9 +4,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="data/apple-touch-icon.png">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="data/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="data/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="data/favicon-16x16.png">
+    <link rel="manifest" href="data/site.webmanifest">
+    <link rel="icon" type="image/x-icon" href="data/favicon.ico">
     
+
+
     <link rel="stylesheet" href="style.css" />
+    
+    
     <title>El Ceibo</title>
+    <script src="js/jquery-3.6.0.js" type="text/javascript"></script>
   </head>
   <body>
     <!------------ HEADER------------>
@@ -16,17 +28,21 @@
         <p>CHASCOMÚS-BUENOS AIRES</p>
       </div>
 
-      <div>
+      <div> 
         <h2>El Ceibo</h2>
-        <button class="button">recibí tu cupón</button>
+       <a href="#formulario-button"><button class="button btn" >recibí tu cupón</button></a>
       </div>
     </header>
 
     <!------------ BANNER ------------>
-    <section class="banner">
-      <div class="greenContainer">
-        <h3>CONDIMENTEMOS <br class="data-mobile" /> EL FUTURO</h3>
+    <section class="banner ">
+      
+      <div class="greenContainer fade-in-top">
+    
+       
+        <h3 class="">CONDIMENTEMOS <br class="data-mobile" /> EL FUTURO</h3>
         <h4>cocinemos más verde</h4>
+
         <div class="banner__pimienta-flex">
           <div>
         <p>Comprando un pack simple,</p>
@@ -35,14 +51,18 @@
           </div>
         <img class="data-desktop" src="data/pimienta.png" alt="dibujo ilustrativo de un pimentero con pimienta alrededor">
       </div>
-        <button class="button button__form">recibí tu cupón</button>
-      </div>
+
+       <a href="#formulario-button"><button class="button button__form btn shake-bottom shake-br">recibí tu cupón</button></a> 
+     
+ 
+      
     </section>
 
     <!------------ INTRO ------------>
 
-    <section class="intro">
-      <div class="data-mobile">
+    <section class="intro ">
+
+      <div class="data-mobile fade-in">
         <h1>Verdulería El Ceibo</h1>
         <h2>¡Recibí en tu casa nuestras frutas y verduras!</h2>
         <p>
@@ -60,7 +80,7 @@
         </div>
       </div>
 
-      <div class="data-desktop">
+      <div class="data-desktop fade-in">
 
         <div>
         
@@ -80,7 +100,7 @@
         
         <div>
           <h1>Verdulería El Ceibo</h1>
-          <button>Seguinos en instagram</button>
+          <button class="btn_white">Seguinos en instagram</button>
         </div>
       </div>
 
@@ -90,16 +110,20 @@
     <!------------ NUTRICIONAL ------------>
 
     <section class="nutricional">
-      <div class="double-line-container__title">
-        <h2>POR QUÉ ES<br />IMPORTANTE CONSUMIR</h2>
+
+      <div class="double-line-container__title fade-in-left">
+        <h2>POR QUÉ ES<br /> <b>IMPORTANTE CONSUMIR</b> </h2>
+        
+        <img class="title-line" src="data/linea.png" alt="linea gris oscuro">
         <h2>FRUTAS & VERDURAS</h2>
       </div>
 
-      <img class="data-desktop" src="data/infoNutricionalDesktop.png" alt="Datos nutricionales en rectangulos rodeados por frutas y verduras">
+      <div>
+      <!--- <img class="data-desktop" src="data/infoNutricionalDesktop.png" alt="Datos nutricionales en rectangulos rodeados por frutas y verduras"> -->
 
       
         <img class="data-mobile"  src="data/infoNutricionalMobile.png" alt="Datos nutricionales en rectangulos rodeados por frutas y verduras" />
-      
+      </div>
     </section>
 
     <!------------ INTRO PACKS Y PROMOCIONES  ------------>
@@ -107,19 +131,21 @@
     <section class="intro-pyp">
       
       
-        <img src="data/zapallo.png" alt="" />
+        <img src="data/zapallo.png" alt="" / class="fade-in-top">
 
-            <div>
+            <div class="fade-in-top">
 
-                <div class=" data-mobile double-line-container__title">
+                <div class=" data-mobile double-line-container__title fade-in-top">
                   <h3>CONOCÉ NUESTROS</h3>
-                  <h3>PACKS Y PROMOCIONES</h3>
+                  <img src="data/linea.png" alt="linea gris oscuro" class="title-line">
+                  <h3><b>PACKS Y PROMOCIONES</b></h3>
                 </div>
 
                 
-                <div class=" data-desktop ">
+                <div class=" data-desktop  ">
                   <h3>CONOCÉ NUESTROS</h3>
-                  <h3>PACKS Y PROMOCIONES</h3>
+                  <img class="title-line" src="data/linea.png" alt="linea gris oscuro">
+                  <h3><b>PACKS Y PROMOCIONES</b></h3>
                 </div>
 
                 <p>
@@ -135,7 +161,7 @@
 
     <section class="pyp">
 
-      <div class="double-line-container__content">
+      <div class="double-line-container__content fade-in-left">
 
         <div class="double-line-container__content__row">
           <img src="data/repollo.png" alt="Dibujo de planta de repollo" />
@@ -182,7 +208,7 @@
        </div>
       </div>
 
-      <div class="double-line-container__content">
+      <div class="double-line-container__content fade-in-right">
         <div class="double-line-container__content__row" >
           <img src="data/lechuga.png" alt="dibujo de planta de lechuga" />
           <h3>
@@ -222,14 +248,14 @@
 
     <section class="insp">
       
-      <div class="data-mobile">
+      <div class="data-mobile fade-in">
         <img src="data/hongosZanahoriaMobile.png" alt="hongos y zanahorias dibujados">
         <h3>UN POCO <br>
           DE MOTIVACIÓN</h3>
         <h4>para empezar el cambio</h4>
       </div>
 
-      <div class="data-desktop">
+      <div class="data-desktop fade-in">
         <img src="data/hongosZanahoriaDesktop.png" alt="hongos y zanahorias dibujados">
          <div>
         <h3>UN POCO DE MOTIVACIÓN</h3>
@@ -244,8 +270,8 @@
           <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@vanesabella2/video/7051731335127239941" data-video-id="7051731335127239941" style="max-height: 410px; max-width: 490px;min-width: 325px;" > <section> <a target="_blank" title="@vanesabella2" href="https://www.tiktok.com/@vanesabella2">@vanesabella2</a> 👩🏼‍🍳 Comparte con tus conocidos vegetarianos💥 <a title="veggie" target="_blank" href="https://www.tiktok.com/tag/veggie">#veggie</a> <a title="recetasvegetarianas" target="_blank" href="https://www.tiktok.com/tag/recetasvegetarianas">#recetasvegetarianas</a> <a title="bajardepeso" target="_blank" href="https://www.tiktok.com/tag/bajardepeso">#bajardepeso</a> <a title="viral" target="_blank" href="https://www.tiktok.com/tag/viral">#viral</a> <a title="fitness" target="_blank" href="https://www.tiktok.com/tag/fitness">#fitness</a> <a title="2022" target="_blank" href="https://www.tiktok.com/tag/2022">#2022</a> <a title="cocina" target="_blank" href="https://www.tiktok.com/tag/cocina">#cocina</a> <a title="recetas" target="_blank" href="https://www.tiktok.com/tag/recetas">#recetas</a> <a title="hacks" target="_blank" href="https://www.tiktok.com/tag/hacks">#hacks</a> <a title="recetasfaciles" target="_blank" href="https://www.tiktok.com/tag/recetasfaciles">#recetasfaciles</a> <a target="_blank" title="♬ sonido original - Vanesa Bella" href="https://www.tiktok.com/music/sonido-original-7051731327565974277">♬ sonido original - Vanesa Bella</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
         </div>
       
-      
-        <div class="card"><blockquote class="tiktok-embed" cite="https://www.tiktok.com/@jpsotou/video/6903556699383139586" data-video-id="6903556699383139586" style="max-height: 410px; max-width: 490px;min-width: 325px;" > <section> <a target="_blank" title="@jpsotou" href="https://www.tiktok.com/@jpsotou">@jpsotou</a> Para los que me pidieron una rutina de boxeo aqui les dejo esta que esta facil y muy accesible espero les sirva <a title="fyp" target="_blank" href="https://www.tiktok.com/tag/fyp">#fyp</a> <a title="ejercicio" target="_blank" href="https://www.tiktok.com/tag/ejercicio">#ejercicio</a> <a title="boxeo" target="_blank" href="https://www.tiktok.com/tag/boxeo">#boxeo</a> <a title="rutina" target="_blank" href="https://www.tiktok.com/tag/rutina">#rutina</a> <a title="parati" target="_blank" href="https://www.tiktok.com/tag/parati">#parati</a> <a target="_blank" title="♬ original sound - CA2 ®" href="https://www.tiktok.com/music/original-sound-6886218750438148870">♬ original sound - CA2 ®</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script></div>
+     
+        <div class="card"><blockquote class="tiktok-embed" cite="https://www.tiktok.com/@jpsotou/video/6903556699383139586" data-video-id="6903556699383139586" style="max-height:410px; max-width: 490px;min-width: 325px;" > <section> <a target="_blank" title="@jpsotou" href="https://www.tiktok.com/@jpsotou">@jpsotou</a> Para los que me pidieron una rutina de boxeo aqui les dejo esta que esta facil y muy accesible espero les sirva <a title="fyp" target="_blank" href="https://www.tiktok.com/tag/fyp">#fyp</a> <a title="ejercicio" target="_blank" href="https://www.tiktok.com/tag/ejercicio">#ejercicio</a> <a title="boxeo" target="_blank" href="https://www.tiktok.com/tag/boxeo">#boxeo</a> <a title="rutina" target="_blank" href="https://www.tiktok.com/tag/rutina">#rutina</a> <a title="parati" target="_blank" href="https://www.tiktok.com/tag/parati">#parati</a> <a target="_blank" title="♬ original sound - CA2 ®" href="https://www.tiktok.com/music/original-sound-6886218750438148870">♬ original sound - CA2 ®</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script></div>
       
         <div class="card"><blockquote class="tiktok-embed" cite="https://www.tiktok.com/@saludablemente.veggie/video/7064334382684720390" data-video-id="7064334382684720390" style=" max-height: 410px; max-width: 490px;min-width: 325px;" > <section> <a target="_blank" title="@saludablemente.veggie" href="https://www.tiktok.com/@saludablemente.veggie">@saludablemente.veggie</a> LAS MEJORES MILANESAS DE BERENJENA <a title="milanesasveganas" target="_blank" href="https://www.tiktok.com/tag/milanesasveganas">#milanesasveganas</a> <a title="govegan" target="_blank" href="https://www.tiktok.com/tag/govegan">#govegan</a> <a title="veganos" target="_blank" href="https://www.tiktok.com/tag/veganos">#veganos</a> <a title="recetasveganas" target="_blank" href="https://www.tiktok.com/tag/recetasveganas">#recetasveganas</a> <a title="recetasvegetarianas" target="_blank" href="https://www.tiktok.com/tag/recetasvegetarianas">#recetasvegetarianas</a> <a title="recetasconberenjenas" target="_blank" href="https://www.tiktok.com/tag/recetasconberenjenas">#recetasconberenjenas</a> <a target="_blank" title="♬ Summer day - TimTaj" href="https://www.tiktok.com/music/Summer-day-6817342688401033218">♬ Summer day - TimTaj</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script></div>
       
@@ -259,78 +285,108 @@
       
       <div class="card"><blockquote class="tiktok-embed" cite="https://www.tiktok.com/@meljnez/video/7081062941163851013" data-video-id="7081062941163851013" style="max-height: 410px; max-width: 490px;min-width: 325px;" > <section> <a target="_blank" title="@meljnez" href="https://www.tiktok.com/@meljnez">@meljnez</a> <a title="entrenamiento" target="_blank" href="https://www.tiktok.com/tag/entrenamiento">#entrenamiento</a> <a title="melfitness" target="_blank" href="https://www.tiktok.com/tag/melfitness">#melfitness</a> <a title="ejercicioencasa" target="_blank" href="https://www.tiktok.com/tag/ejercicioencasa">#ejercicioencasa</a> <a target="_blank" title="♬ sonido original - Jordan Elias" href="https://www.tiktok.com/music/sonido-original-6857286842807913222">♬ sonido original - Jordan Elias</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script></div>
       
-      
+     
       </div>
       
     </section>
 
 
-    <!------------  FORM  ------------>
+     <!------------  FORM  ------------>
 
-    <section class="form">
+     <div class="contenedor form" >
 
-      <div class="greenContainer">
+      <!------------  localizador del botón ------------>
+      <div id="formulario-button" style=" width:20px; height:20px; margin-top: 50vh; position: absolute;"></div>
+   
+      <section id="formulario">
 
+        <div class="greenContainer"  >
 
-    
-        <h2>
-          LLEVATE TU<br class="data-mobile" />
-          PIMENTERO GRATIS
-        </h2>
-        <p>
-          recibí tu cupón digital para retirar el <br class="data-mobile"> 
-mix de pimientas +  pimentero <br>
-con la compra de un pack simple
-        </p>
+          <h2>
+            LLEVATE TU<br class="data-mobile" />
+            <b>PIMENTERO GRATIS</b>
+          </h2>
+          <p>
+            recibí tu cupón digital para retirar el <br class="data-mobile"> 
+  mix de pimientas +  pimentero <br>
+  con la compra de un pack simple
+          </p>
 
-
-        <form action="form.php" method="post">
-
-          <div class="">
+        <form onsubmit="enviar(); return false">
+          
+         
           <input
-            class="field"
             type="text"
-            name="nombre"
-            id="nombre"
+            id="fnombre"
+            name="fnombre"
+            value=""
+            class="field input"
             placeholder="Nombre"
-          />
+            required/><br />
 
+               
+         
           <input
-            class="field"
-            type="email"
-            name="email"
-            id="ciudad"
+            type="text"
+            id="fciudad"
+            name="fciudad"
+            value=""
+            class="field input"
             placeholder="Ciudad"
-          />
+            required/><br />
 
           <input
-            class="field"
-            type="text"
-            name="instagram"
-            id="barrio"
-            placeholder="Barrio"
-          />
+          type="text"
+          id="fbarrio"
+          name="fbarrio"
+          value=""
+          class="field input"
+          placeholder="Barrio"
+          required/><br />
 
-          <input
-            class="field"
+       <input
             type="text"
-            name="instagram"
-            id="instagram"
-            placeholder="instagram"
-          />
-          
-        </div>
-          
-          <input class="button button__form" type="submit" value="recibí tu cupón" />  
+            id="finstagram"
+            name="finstagram"
+            placeholder="Instagram"
+            class="field input"
+            required/><br /><br />
+
+
+       
+
+
+        <button class="button button__form btn" id="boton-form" >recibí tu cupón</button>
          
          
-
-        </div>
         
-      
+
+        </div>
+
         </form>
-     
-    </section>
+
+      </section>
+
+
+      <div class="fondo-popup no-mostrar fade-in" id="feedback-container">
+        <section id="seccion-feedback" class="popup">
+          
+          <button onclick="cerrarFeedback()"><img src="data/cerrar.png" alt="cruz negra"></button>
+          <img src="data/manzana-corazon.png" alt="manzana animada con forma de corazón">
+         
+          <h2>LISTO <span id="nombre"><br>@nombre<br></span>!</h2>
+         
+
+          <h3>
+            Gracias por elegir el consumo de frutas y verduras que ayudan al planeta reduciendo en un 
+            50% el consumo de agua ♥
+          </h3>
+          <h4>Enviamos tu cupón a <span id="instagram">@instagram</span></h3>
+          
+          <button onclick="" class="btn_black">Seguir en Instagram</button>
+        </section>
+      </div>
+    </div>
     <!------------  FOOTER  ------------>
     <footer>
         <section>
@@ -348,7 +404,10 @@ con la compra de un pack simple
       </div>
     </div>
        </section>
-
+      
     </footer>
+
+    <script src="js/script.js" type="text/javascript"></script>
+    
   </body>
 </html>
